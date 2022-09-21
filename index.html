@@ -16,39 +16,42 @@
           <li><a href="#ommig">Om Mig</a></li>
           <li><a href="#fardigheter">Färdigheter</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#socialt">Socialt</a></li>
           <li><a href="#kontakt">Kontakt</a></li>
+          <li><a href="#socialt">Socialt</a></li>
         </ul>
       </nav>
     </header>
 
     <div class="container">
-      <section id="hem">
-        <h1>Jonas Nilsson</h1>
-        <i class="bi bi-code-slash"></i>
-        <h2>Front End Developer Student</h2>
-      </section>
+      <div class="divhem">
+        <section id="hem" class="hem">
+          <h1>Jonas Nilsson</h1>
+          <img src="/profile_pic.webp" alt="profile picture" width="15%" />
 
-      <section id="ommig">
-        <div>
+          <h2>Front End Developer</h2>
+        </section>
+      </div>
+      <div class="divommig">
+        <section id="ommig" class="ommig">
           <h2>Om Mig</h2>
           <p>
             Jag heter Jonas och studerar till Front End Developer på
             yrkeshögskolan Medieinstitutet i Malmö.
           </p>
 
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nobis,
-          ratione minima nemo maiores sed, totam illum ipsa sequi culpa
-          perferendis. Deleniti commodi reiciendis nulla nam cum eos?
-          Aspernatur, nam nihil. Eaque tempora vitae quam veritatis fugiat
-          aliquid voluptatum alias, asperiores ipsum, placeat voluptate atque
-          similique facere ullam molestiae in?
-        </div>
-      </section>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+            mollitia aliquam dicta. Libero magni rem modi tempora animi
+            voluptatem commodi! Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Exercitationem, maiores accusamus. Maiores, a
+            officiis? Suscipit quidem est iure pariatur soluta.
+          </p>
+        </section>
+      </div>
 
-      <section id="fardigheter">
-        <div>
-          <h1>Färdigheter</h1>
+      <div class="divfardigheter">
+        <section id="fardigheter" class="fardigheter">
+          <h2>Färdigheter</h2>
           <ul>
             <li>Front End Utveckling?</li>
             <li>HTML</li>
@@ -56,21 +59,42 @@
             <li>JavaScript</li>
             <li>None of the above</li>
           </ul>
-        </div>
-      </section>
+        </section>
+      </div>
 
-      <section id="portfolio">
-        <div>
-          <h1>Portfolio</h1>
+      <div class="divport">
+        <section id="portfolio" class="port">
+          <h2>Portfolio</h2>
           <ul class="portfolio">
             <li><i class="bi bi-file-earmark-code"></i></li>
             <li><i class="bi bi-code-slash"></i></li>
             <li><i class="bi bi-journal-code"></i></li>
           </ul>
-        </div>
-      </section>
-      <section id="socialt">
-        <div>
+        </section>
+      </div>
+
+      <div class="divkontakt">
+        <section id="kontakt" class="kontakt">
+          <h2>Kontakt</h2>
+          <div class="form">
+            <form action="" method="post">
+              <label for="name">Namn:</label>
+              <input type="text" id="name" name="name" autocomplete="off" />
+              <label for="mail">E-Post:</label>
+              <input type="email" name="mail" id="mail" autocomplete="off" />
+              <label for="tel">Telefon: </label>
+              <input type="tel" name="tel" id="tel" autocomplete="off" />
+              <label for="text">Meddelande:</label>
+              <textarea name="text" id="text" cols="40" rows="10"></textarea>
+              <button type="submit">Skicka</button>
+            </form>
+          </div>
+        </section>
+      </div>
+
+      <div class="divsocial">
+        <section id="socialt" class="social">
+          <h2>Socialt</h2>
           <ul class="socialt">
             <li>
               <a href="https://www.linkedin.com/in/jonas-nilsson-4b8886226/"
@@ -93,11 +117,8 @@
               ></a>
             </li>
           </ul>
-        </div>
-      </section>
-      <section id="kontakt">
-        <div>formulär</div>
-      </section>
+        </section>
+      </div>
     </div>
   </body>
 </html>
