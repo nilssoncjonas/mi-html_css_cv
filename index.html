@@ -5,11 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>mi-HTML_CSS_</title>
-    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="/css/main.css" />
   </head>
   <body>
     <header>
-      <img src="logo_jn.png" />
+      <!-- <div class="logo">
+        <img src="logo_jn.png" width="50px" />
+      </div> -->
       <nav>
         <ul class="nav">
           <li><a href="#hem">Hem</a></li>
@@ -23,16 +25,19 @@
     </header>
 
     <div class="container">
-      <div class="divhem">
-        <section id="hem" class="hem">
+      <div class="div_section">
+        <section id="hem" class="section_in_div">
           <h1>Jonas Nilsson</h1>
-          <img src="/profile_pic.webp" alt="profile picture" width="15%" />
 
-          <h2>Front End Developer</h2>
+          <div class="profilepic">
+            <img src="/profile_pic.webp" alt="profile picture" width="15%" />
+          </div>
+
+          <h2>Front End Developer student</h2>
         </section>
       </div>
-      <div class="divommig">
-        <section id="ommig" class="ommig">
+      <div class="div_section">
+        <section id="ommig" class="section_in_div">
           <h2>Om Mig</h2>
           <p>
             Jag heter Jonas och studerar till Front End Developer på
@@ -42,17 +47,18 @@
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
             mollitia aliquam dicta. Libero magni rem modi tempora animi
-            voluptatem commodi! Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Exercitationem, maiores accusamus. Maiores, a
-            officiis? Suscipit quidem est iure pariatur soluta.
+            voluptatem commodi!<br />
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Exercitationem, maiores accusamus. Maiores, a officiis? Suscipit
+            quidem est iure pariatur soluta.
           </p>
         </section>
       </div>
 
-      <div class="divfardigheter">
-        <section id="fardigheter" class="fardigheter">
+      <div class="div_section">
+        <section id="fardigheter" class="section_in_div">
           <h2>Färdigheter</h2>
-          <ul>
+          <ul class="fardighetlist">
             <li>Front End Utveckling?</li>
             <li>HTML</li>
             <li>CSS</li>
@@ -62,8 +68,8 @@
         </section>
       </div>
 
-      <div class="divport">
-        <section id="portfolio" class="port">
+      <div class="div_section">
+        <section id="portfolio" class="section_in_div">
           <h2>Portfolio</h2>
           <ul class="portfolio">
             <li><i class="bi bi-file-earmark-code"></i></li>
@@ -73,8 +79,8 @@
         </section>
       </div>
 
-      <div class="divkontakt">
-        <section id="kontakt" class="kontakt">
+      <div class="div_section">
+        <section id="kontakt" class="section_in_div">
           <h2>Kontakt</h2>
           <div class="form">
             <form action="" method="post">
@@ -92,8 +98,8 @@
         </section>
       </div>
 
-      <div class="divsocial">
-        <section id="socialt" class="social">
+      <div class="div_section">
+        <section id="socialt" class="section_in_div">
           <h2>Socialt</h2>
           <ul class="socialt">
             <li>
