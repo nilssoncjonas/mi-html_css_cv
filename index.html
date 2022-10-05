@@ -1,130 +1,100 @@
 <!DOCTYPE html>
 <html lang="sv">
   <head>
+    <!-- LÄGGA TILL META TAGGAR! -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>mi-HTML_CSS_</title>
-    <link rel="stylesheet" href="/css/main.css" />
+    <title>Jonas Nilsson | Front End Developer</title>
+    <!-- LÄNKA CSS -->
   </head>
   <body>
+    <!-- BAKGRUND PÅ BODY, ALLA ANDRA SEKTIONER/DIVAR HAR GAP MELLAN SIG -->
     <header>
-      <!-- <div class="logo">
-        <img src="logo_jn.png" width="50px" />
-      </div> -->
       <nav>
-        <ul class="nav">
-          <li><a href="#hem">Hem</a></li>
-          <li><a href="#ommig">Om Mig</a></li>
-          <li><a href="#fardigheter">Färdigheter</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#kontakt">Kontakt</a></li>
-          <li><a href="#socialt">Socialt</a></li>
+        <ul class="nav-list">
+          <li><a href="#">Hem</a></li>
+          <li><a href="#">Om Mig</a></li>
+          <li><a href="#">Projekt</a></li>
+          <li><a href="#">Kontakt</a></li>
         </ul>
       </nav>
     </header>
-
-    <div class="container">
-      <div class="div_section">
-        <section id="hem" class="section_in_div">
-          <h1>Jonas Nilsson</h1>
-
-          <div class="profilepic">
-            <img src="/profile_pic.webp" alt="profile picture" width="15%" />
-          </div>
-
-          <h2>Front End Developer student</h2>
-        </section>
+    <aside>
+      <div>
+        <!-- <picture></picture> -->
+        <h1>Jonas Nilsson</h1>
+        <!-- STYLE SOM EN KNAPP -->
+        <h2>Front End Developer</h2>
+        <!-- SOCIAL MEDIA ICONS -->
+        <span>ICONS</span>
+        <ul class="info-list">
+          <!-- ICONS FRAMFÖR VARJE RAD -->
+          <li><a href="#">0734 042 402</a></li>
+          <li><a href="#">Kristianstad</a></li>
+          <li><a href="#">GitHub</a></li>
+          <li><a href="#">nilssoncjonas@gmail.com</a></li>
+          <!-- LÄGGA TILL DOWNLOAD ICON -->
+          <li><a href="#">Download CV</a></li>
+        </ul>
       </div>
-      <div class="div_section">
-        <section id="ommig" class="section_in_div">
-          <h2>Om Mig</h2>
+    </aside>
+    <main>
+      <section class="start"></section>
+      <section class="about">
+        <div>
+          <h3>Om Mig</h3>
           <p>
-            Jag heter Jonas och studerar till Front End Developer på
-            yrkeshögskolan Medieinstitutet i Malmö.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat,
+            hic. Laborum doloribus obcaecati, tempora placeat modi explicabo
+            dignissimos similique sint fugit ipsam provident cum sunt nesciunt
+            minus velit quasi ipsum!
           </p>
+        </div>
+        <h3>Vad Jag Kan Göra...</h3>
+        <div>
+            <h4>Web Development</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In qui repellat cumque quisquam vel ab?</p>
+        </div>
+        <div>
+            <h4>Web Design</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In qui repellat cumque quisquam vel ab?</p>
+        </div>
+        <div>
+            <h4>Photography</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In qui repellat cumque quisquam vel ab?</p>
+        </div>
 
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
-            mollitia aliquam dicta. Libero magni rem modi tempora animi
-            voluptatem commodi!<br />
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Exercitationem, maiores accusamus. Maiores, a officiis? Suscipit
-            quidem est iure pariatur soluta.
-          </p>
-        </section>
-      </div>
+      </section>
+      <section class="project">
+        <h3>Mina Projekt</h3>
+        <div class="grid-parent">
+            <div class="div1">Projekt </div>
+            <div class="div2">Projekt </div>
+            <div class="div3">Projekt </div>
+            <div class="div4">Projekt </div>
+            <div class="div5">Projekt </div>
+            <div class="div6">Projekt </div>
+            </div> 
+      </section>
+      <section class="contact">
+        <h3>Kontakta Mig</h3>
+        <form action="" method="post">
+            <label for="name">Namn:</label>
+            <input type="text" id="name" name="name" autocomplete="off" />
+            <label for="mail">E-Post:</label>
+            <input type="email" name="mail" id="mail" autocomplete="off" />
+            <label for="tel">Telefon: </label>
+            <input type="tel" name="tel" id="tel" autocomplete="off" />
+            <label for="text">Meddelande:</label>
+            <textarea name="text" id="text" cols="40" rows="10"></textarea>
+            <button type="submit">Skicka</button>
+          </form>
 
-      <div class="div_section">
-        <section id="fardigheter" class="section_in_div">
-          <h2>Färdigheter</h2>
-          <ul class="fardighetlist">
-            <li>Front End Utveckling?</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>None of the above</li>
-          </ul>
-        </section>
-      </div>
-
-      <div class="div_section">
-        <section id="portfolio" class="section_in_div">
-          <h2>Portfolio</h2>
-          <ul class="portfolio">
-            <li><i class="bi bi-file-earmark-code"></i></li>
-            <li><i class="bi bi-code-slash"></i></li>
-            <li><i class="bi bi-journal-code"></i></li>
-          </ul>
-        </section>
-      </div>
-
-      <div class="div_section">
-        <section id="kontakt" class="section_in_div">
-          <h2>Kontakt</h2>
-          <div class="form">
-            <form action="" method="post">
-              <label for="name">Namn:</label>
-              <input type="text" id="name" name="name" autocomplete="off" />
-              <label for="mail">E-Post:</label>
-              <input type="email" name="mail" id="mail" autocomplete="off" />
-              <label for="tel">Telefon: </label>
-              <input type="tel" name="tel" id="tel" autocomplete="off" />
-              <label for="text">Meddelande:</label>
-              <textarea name="text" id="text" cols="40" rows="10"></textarea>
-              <button type="submit">Skicka</button>
-            </form>
-          </div>
-        </section>
-      </div>
-
-      <div class="div_section">
-        <section id="socialt" class="section_in_div">
-          <h2>Socialt</h2>
-          <ul class="socialt">
-            <li>
-              <a href="https://www.linkedin.com/in/jonas-nilsson-4b8886226/"
-                ><i class="bi bi-linkedin"></i
-              ></a>
-            </li>
-            <li>
-              <a href="https://github.com/nilssoncjonas"
-                ><i class="bi bi-github"></i
-              ></a>
-            </li>
-            <li>
-              <a href="https://discord.com/users/1019893083774656543"
-                ><i class="bi bi-discord"></i
-              ></a>
-            </li>
-            <li>
-              <a href="mailto:nilssoncjonas@gmail.com"
-                ><i class="bi bi-envelope"></i
-              ></a>
-            </li>
-          </ul>
-        </section>
-      </div>
-    </div>
+      </section>
+    </main>
+    <footer>
+        <!-- TÄNKER EN SITE MAP EL. LIKNANDE NAV MENU -->
+    </footer>
   </body>
 </html>
