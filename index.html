@@ -10,93 +10,109 @@
     <link rel="stylesheet" href="css/main.css" .css />
   </head>
   <body>
-    <!-- BAKGRUND PÅ BODY, ALLA ANDRA SEKTIONER/DIVAR HAR GAP MELLAN SIG -->
     <header>
-      <nav>
-        <ul class="nav-list">
-          <li><a href="#">Hem</a></li>
-          <li><a href="#">Om Mig</a></li>
-          <li><a href="#">Projekt</a></li>
-          <li><a href="#">Kontakt</a></li>
-        </ul>
-      </nav>
-    </header>
-    <div class="test">
 
+    </header>
+    <div class="main-wrap">
       <aside class="left-side-menu">
         <div class="pic-bg">
-          <img src="img/profile-pic-200w.webp" class="profile-pic" alt="Profile Pictrue">
-        </div>
-        
-        <h1 class="name">Jonas Nilsson</h1>
-        
-        <h2 class="title">Front End Developer</h2>
-        
-        <span></span>
-        <ul class="info-list">
-          <li><a href="#"><i class="bi bi-linkedin"></i></a></li>
-          <li><a href="#"><i class="bi bi-github"></i></a ></li>
-            <li><a href="#"><i class="bi bi-geo-alt"></i>Kristianstad</a></li>
-            <li><a href="#"><i class="bi bi-envelope"></i>nilssoncjonas@gmail.com</a></li>
-            <li><a href="#" class="download"><i class="bi bi-download"></i>Download CV</a></li>
-          </ul>
-        </aside>
-        
-        <main>
-          <section class="about">
+          <!-- srcset -->
+          <img
+            src="img/profile-pic-200w.webp"
+            class="profile-pic"
+            alt="Profile Pictrue"
             
-            <div class="about-div">
-              <h3 class="about-h">Om Mig</h3>
+          />
+        </div>
+        <h1 class="name">Jonas Nilsson</h1>
+        <h2 class="title">Front End Developer</h2>
+        <!-- GÖRA OM LISTAN TILL SPAN MED FLEX? -->
+        <ul class="info-list">
+          <li>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="bi bi-github"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="bi bi-geo-alt"></i>Kristianstad</a>
+          </li>
+          <li>
+            <a href="#"
+              ><i class="bi bi-envelope"></i>nilssoncjonas@gmail.com</a
+            >
+          </li>
+          <li>
+            <a href="#" class="download"
+              ><i class="bi bi-download"></i>Download CV</a
+            >
+          </li>
+        </ul>
+      </aside>
+
+      <main>
+        <div class="nav-sticky">
+          <nav>
+            <ul class="nav-list">
+              <li><a href="#">Hem</a></li>
+              <li><a href="#">Om Mig</a></li>
+              <li><a href="#">Projekt</a></li>
+              <li><a href="#">Kontakt</a></li>
+            </ul>
+          </nav>
+        </div>
+        <section class="about">
+          <div class="about-div">
+            <h3 class="about-h">Om Mig</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat,
+              hic. Laborum doloribus obcaecati, tempora placeat modi explicabo
+              dignissimos similique sint fugit ipsam provident cum sunt nesciunt
+              minus velit quasi ipsum!
+            </p>
+          </div>
+          <span class="about-edu-heading">
+            <h3>Front End Developer Utbildningen</h3>
+          </span>
+          <div class="about-edu">
+            <div>
+              <h4><i class="bi bi-filetype-html"></i> HTML & CSS</h4>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat,
-                hic. Laborum doloribus obcaecati, tempora placeat modi explicabo
-                dignissimos similique sint fugit ipsam provident cum sunt nesciunt
-                minus velit quasi ipsum!
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. In qui
+                repellat cumque quisquam vel ab?
               </p>
             </div>
-            <span class="about-edu-heading">
-              <h3>Front End Developer Utbildningen</h3>
-              
-            </span>
-            <div class="about-edu">
-              <div>
-                <h4>HTML & CSS</h4>
-                <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. In qui
-              repellat cumque quisquam vel ab?
-            </p>
+            <div>
+              <h4><i class="bi bi-filetype-js"></i> JavaScript</h4>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. In qui
+                repellat cumque quisquam vel ab?
+              </p>
+            </div>
+            <div>
+              <h4><i class="bi bi-building"></i> Kompetensportfölj & Entreprenörskap</h4>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. In qui
+                repellat cumque quisquam vel ab?
+              </p>
+            </div>
+            <div>
+              <h4><i class="bi bi-terminal"></i> API Utveckling</h4>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. In qui
+                repellat cumque quisquam vel ab?
+              </p>
+            </div>
+            <div>
+              <h4><i class="bi bi-people"></i> LIA - Lärande I Arbete</h4>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. In qui
+                repellat cumque quisquam vel ab?
+              </p>
+            </div>
           </div>
-          <div>
-            <h4>JavaScript</h4>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. In qui
-              repellat cumque quisquam vel ab?
-            </p>
-          </div>
-          <div>
-            <h4>Kompetensportfölj & Entreprenörskap</h4>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. In qui
-              repellat cumque quisquam vel ab?
-            </p>
-          </div>
-          <div>
-            <h4>API Utveckling</h4>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. In qui
-              repellat cumque quisquam vel ab?
-            </p>
-          </div>
-          <div>
-            <h4>LIA - Lärande I Arbete</h4>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. In qui
-              repellat cumque quisquam vel ab?
-            </p>
-          </div>
-        </div>
-      </section>
-      <!-- 
+        </section>
+        
         <section class="project">
           <h3>Mina Projekt</h3>
           <div class="grid-parent">
@@ -108,7 +124,7 @@
             <div class="div6">Projekt </div>
           </div> 
         </section>
-        <section class="contact">
+        <!-- <section class="contact">
           <h3>Kontakta Mig</h3>
           <form action="" method="post">
             <label for="name">Namn:</label>
@@ -125,9 +141,8 @@
         </section> -->
       </main>
     </div>
-      <footer>
-        <!-- TÄNKER EN SITE MAP EL. LIKNANDE NAV MENU -->
-      </footer>
-    </body>
-    </html>
-    
+    <footer>
+      <!-- TÄNKER EN SITE MAP EL. LIKNANDE NAV MENU -->
+    </footer>
+  </body>
+</html>

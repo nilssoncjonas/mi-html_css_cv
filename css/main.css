@@ -1,22 +1,23 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
 @import url("https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Krona+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Cinzel:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500&display=swap");
 @media screen and (max-width: 920px) {
   body {
     background-color: red;
   }
 }
 nav {
-  position: fixed;
+  position: -webkit-sticky;
+  position: sticky;
   top: 0px;
-  right: 0px;
   width: 50%;
   margin: 0 auto;
   display: flex;
   justify-content: center;
   background-image: linear-gradient(135deg, #383838, #252525);
-  border: 1px solid #383838;
-  border-radius: 0px 0px 0px 25px;
+  border-bottom: 1px solid #AD7F51;
+  border-radius: 0px 0px 25px 25px;
 }
 
 .nav-list {
@@ -47,13 +48,10 @@ nav {
   transition: all 0.3s ease 0s;
 }
 
-:root {
-  padding: 0px;
-  margin: 0px;
-  box-sizing: border-box;
-  background-color: #1E1E1F;
-  color: #D6D6D6;
-  font-family: "Cinzel", serif;
+a {
+  font-size: 1em;
+  text-decoration: none;
+  color: #AD7F51;
 }
 
 .name {
@@ -64,36 +62,40 @@ nav {
 }
 
 .left-side-menu {
+  border: 1px solid #383838;
+  border-radius: 25px;
+  box-shadow: 0px 0px 5px 5px rgba(18, 18, 18, 0.75);
+  -webkit-box-shadow: 0px 0px 5px 5px rgba(18, 18, 18, 0.75);
+  -moz-box-shadow: 0px 0px 5px 5px rgba(18, 18, 18, 0.75);
   position: -webkit-sticky;
   position: sticky;
-  left: 1vw;
+  left: 1.5vw;
   top: 3.5vw;
-  border-radius: 25px;
-  border: 1px solid #383838;
   width: 300px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   background-color: #1E1E1F;
   text-align: center;
-  box-shadow: 0px 0px 5px 5px rgba(18, 18, 18, 0.75);
-  -webkit-box-shadow: 0px 0px 5px 5px rgba(18, 18, 18, 0.75);
-  -moz-box-shadow: 0px 0px 5px 5px rgba(18, 18, 18, 0.75);
 }
 
 .pic-bg {
+  border: 1px solid #AD7F51;
+  border-radius: 25px;
+  box-shadow: 0px 0px 5px 5px rgba(18, 18, 18, 0.75);
+  -webkit-box-shadow: 0px 0px 5px 5px rgba(18, 18, 18, 0.75);
+  -moz-box-shadow: 0px 0px 5px 5px rgba(18, 18, 18, 0.75);
   width: auto;
   height: auto;
-  border-radius: 25px;
-  border: 1px solid #AD7F51;
-  background-image: linear-gradient(135deg, #383838, #252525);
   margin: 10%;
+  background-image: linear-gradient(135deg, #383838, #252525);
 }
 
 .profile-pic {
   border: 1px solid #383838;
   border-radius: 25px;
   margin: 15px;
+  width: 80%;
 }
 
 .title {
@@ -113,13 +115,13 @@ nav {
   margin: 30px;
 }
 .info-list .download {
-  background-color: #AD7F51;
+  background-image: linear-gradient(135deg, #b69574, #AD7F51);
   padding: 10px 20px;
-  color: #303338;
   border-radius: 25px;
+  color: #303338;
 }
 .info-list .download:hover {
-  background-color: #1E1E1F;
+  background-image: linear-gradient(135deg, #383838, #252525);
   color: #AD7F51;
   border: 1px solid #AD7F51;
   transition: all 0.3s ease 0s;
@@ -127,25 +129,41 @@ nav {
 .info-list .download:not(:hover) {
   transition: all 0.3s ease 0s;
 }
-.info-list a {
+
+a {
   font-size: 1em;
   text-decoration: none;
   color: #AD7F51;
 }
 
-.test {
+:root {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  background-color: #1E1E1F;
+  color: #D6D6D6;
+  font-family: "Montserrat", sans-serif;
+}
+
+.nav-sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+}
+
+.main-wrap {
   display: flex;
 }
 
 main {
-  margin: 3vw;
   border: 1px solid #383838;
   border-radius: 25px;
-  background-color: #1E1E1F;
-  height: 1400px;
   box-shadow: 0px 0px 5px 5px rgba(18, 18, 18, 0.75);
   -webkit-box-shadow: 0px 0px 5px 5px rgba(18, 18, 18, 0.75);
   -moz-box-shadow: 0px 0px 5px 5px rgba(18, 18, 18, 0.75);
+  margin: 3vw;
+  background-color: #1E1E1F;
+  height: auto;
 }
 
 .about {
@@ -154,14 +172,9 @@ main {
 }
 
 .about-div {
-  margin: 5% auto;
+  margin: 2% auto;
   max-width: 85%;
-  padding: 2%;
-  border: 1px solid #383838;
-  border-radius: 25px;
-  box-shadow: 0px 0px 5px 5px rgba(18, 18, 18, 0.75);
-  -webkit-box-shadow: 0px 0px 5px 5px rgba(18, 18, 18, 0.75);
-  -moz-box-shadow: 0px 0px 5px 5px rgba(18, 18, 18, 0.75);
+  padding: 1%;
 }
 
 .about-edu-heading {
@@ -181,13 +194,71 @@ h4 {
   padding: 2%;
 }
 .about-edu div {
-  width: 300px;
-  margin: 2%;
-  padding: 1em;
-  border: 1px solid #383838;
+  border: 1px solid #AD7F51;
   border-radius: 25px;
   box-shadow: 0px 0px 5px 5px rgba(18, 18, 18, 0.75);
   -webkit-box-shadow: 0px 0px 5px 5px rgba(18, 18, 18, 0.75);
   -moz-box-shadow: 0px 0px 5px 5px rgba(18, 18, 18, 0.75);
+  width: 300px;
+  margin: 2%;
+  padding: 1%;
   flex-grow: 2;
+}
+
+.project {
+  margin: 0 auto;
+  width: 85%;
+  padding: 2% auto;
+}
+
+.grid-parent {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 2%;
+  grid-row-gap: 2%;
+  width: 100%;
+  height: 1000px;
+  margin: 1% auto;
+  padding: 1%;
+}
+.grid-parent div {
+  border-radius: 25px;
+  border: 1px solid #383838;
+  padding: 3%;
+  background-color: #121212;
+  box-shadow: 0px 0px 5px 5px rgba(18, 18, 18, 0.75);
+  -webkit-box-shadow: 0px 0px 5px 5px rgba(18, 18, 18, 0.75);
+  -moz-box-shadow: 0px 0px 5px 5px rgba(18, 18, 18, 0.75);
+}
+.grid-parent div:hover {
+  scale: 1.05;
+  transition: all 0.3s ease 0s;
+}
+.grid-parent div:not(:hover) {
+  transition: all 0.3s ease 0s;
+}
+
+.div1 {
+  grid-area: 1/1/2/3;
+}
+
+.div2 {
+  grid-area: 1/3/2/4;
+}
+
+.div3 {
+  grid-area: 2/1/3/2;
+}
+
+.div4 {
+  grid-area: 2/2/3/4;
+}
+
+.div5 {
+  grid-area: 3/1/5/3;
+}
+
+.div6 {
+  grid-area: 3/3/5/4;
 }

@@ -1,20 +1,18 @@
-@use "../base/color.scss";
+@use "../base/color.scss" as c;
 nav {
-    position: fixed;
+    position: sticky;
     top: 0px;
-    right: 0px;
     width: 50%;
     margin: 0 auto;
     display: flex;
     justify-content: center;
     background-image: linear-gradient(
       135deg,
-      color.$black-fade-top,
-      color.$black-fade-bottom
+      c.$black-fade-top,
+      c.$black-fade-bottom
       );
-    border: 1px solid color.$black-fade-top;
-    // border: 1px solid color.$gold;
-    border-radius: 0px 0px 0px 25px;
+    border-bottom: 1px solid c.$gold;
+    border-radius: 0px 0px 25px 25px;
 
   }
   .nav-list {
@@ -30,13 +28,13 @@ nav {
       text-transform: uppercase;
       letter-spacing: 5px;
       text-decoration: none;
-      color: color.$gold;
+      color: c.$gold;
       border: 1px solid transparent;
       padding: 5px 15px;
       border-radius: 5px;
       &:hover {
-        background-color: color.$black-bg-dark;
-        border: 1px solid color.$gold;
+        background-color: c.$black-bg-dark;
+        border: 1px solid c.$gold;
         transition: all 0.3s ease 0s;
       }
       &:not(:hover) {
