@@ -1,7 +1,47 @@
-
-
-@media screen and (max-width: 920px) {
+@use "../base/color" as c;
+@media screen and (max-width: 1024px) {
   body {
-    background-color: red;
+    background-color: c.$white;
   }
+
+  .mobile-only {
+    display: inline !important;
+  }
+  .desktop-only {
+    display: none;
+  }
+  .bi-info-square,
+  .bi-list {
+    font-size: 1.5em;
+  }
+  // .nav-list {
+  //   pointer-events: none;
+  // }
+
+  .left-side-menu {
+
+    transform: translateX(-325px);
+    transition: transform 300ms cubic-bezier(.5, 0, .5, 1)
+  }
+  
+
+  
+  .left-side-menu-toggle {
+    position: absolute;
+    top: 2em;
+    right: 0px;
+    transform: translateX(80px);
+    background: c.$black-light;
+    padding: 1em;
+    border: 1px solid c.$gold;
+    color: c.$gold;
+    font-size: 1.2em;
+    border-radius: 20px; 
+  }
+  
+  .nav-open .nav {
+    transform: translateX(0);
+  }
+
+
 }

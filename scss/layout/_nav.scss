@@ -1,44 +1,94 @@
 @use "../base/color.scss" as c;
+.nav-sticky {
+  position: sticky;
+  top: 0px;
+}
 nav {
-    position: sticky;
-    top: 0px;
-    width: 50%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    background-image: linear-gradient(
-      135deg,
-      c.$black-fade-top,
-      c.$black-fade-bottom
-      );
-    border-bottom: 1px solid c.$gold;
-    border-radius: 0px 0px 25px 25px;
-
-  }
-  .nav-list {
-    width: 90%;
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-    padding-left: 0px;
-    margin: 10px 0px;
-    a {
-      font-size: 1em;
-      font-weight: 500;
-      text-transform: uppercase;
-      letter-spacing: 5px;
-      text-decoration: none;
-      color: c.$gold;
-      border: 1px solid transparent;
-      padding: 5px 15px;
-      border-radius: 5px;
-      &:hover {
-        background-color: c.$black-bg-dark;
-        border: 1px solid c.$gold;
-        transition: all 0.3s ease 0s;
-      }
-      &:not(:hover) {
-        transition: all 0.3s ease 0s;
-      }
+  position: sticky;
+  top: 0px;
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  background-image: linear-gradient(
+    180deg,
+    c.$black-fade-top,
+    c.$black-fade-bottom
+  );
+  border-bottom: 1px solid c.$gold;
+  border-radius: 0px 0px 25px 25px;
+}
+.nav-list {
+  width: 90%;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  padding-left: 0px;
+  margin: 10px 0px;
+  a {
+    font-size: 1em;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-decoration: none;
+    color: c.$gold;
+    border: 1px solid transparent;
+    padding: 5px 15px;
+    border-radius: 5px;
+    &:hover {
+      background-color: c.$black-bg-dark;
+      border: 1px solid c.$gold;
+      transition: all 0.3s ease 0s;
+    }
+    &:not(:hover) {
+      transition: all 0.3s ease 0s;
     }
   }
+}
+
+@media screen and (max-width: 1350px) {
+  nav {
+    // position: sticky;
+    // top: 0px;
+    width: 70%;
+    // margin: 0 auto;
+    // display: flex;
+    // justify-content: center;
+    // background-image: linear-gradient(
+    // 180deg,
+    // c.$black-fade-top,
+    // c.$black-fade-bottom
+    // );
+    // border-bottom: 1px solid c.$gold;
+    // border-radius: 0px 0px 25px 25px;
+  }
+  .nav-list {
+    width: 100%;
+
+    // list-style: none;
+    // display: flex;
+    // justify-content: space-around;
+    // padding-left: 0px;
+    // margin: 5px 0px;
+    a {
+      // font-size: 0.9em;
+      // font-weight: 500;
+      // text-transform: uppercase;
+      // letter-spacing: 1px;
+      // text-decoration: none;
+      // color: c.$gold;
+      // border: 1px solid transparent;
+      padding: 5px 10px;
+      // border-radius: 5px;
+      // &:hover {
+      //   background-color: c.$black-bg-dark;
+      //   border: 1px solid c.$gold;
+      //   transition: all 0.3s ease 0s;
+      // }
+      // &:not(:hover) {
+      //   transition: all 0.3s ease 0s;
+      // }
+    }
+  }
+
+}

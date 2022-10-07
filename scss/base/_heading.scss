@@ -1,0 +1,17 @@
+@use "_color.scss" as c; 
+.name {
+    margin: 0px;
+    color: c.$gold;
+    font-family: "Comforter Brush", cursive;
+    font-size: 3.5em;
+  }
+
+.fedu-heading {
+    font-size: 1em;
+    text-align: center;
+  } 
+  
+  .fedu-info {
+    font-size: 1em;
+    margin: 1%;
+  }

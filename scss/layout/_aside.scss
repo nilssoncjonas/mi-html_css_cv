@@ -3,23 +3,21 @@
 .name {
   margin: 0px;
   color: c.$gold;
-//   font-family: 'Cinzel Decorative', cursive;
-//   font-size: 2em;
   font-family: "Comforter Brush", cursive;
   font-size: 3.5em;
 }
 .left-side-menu {
   @include border-grey-shadow;
   position: sticky;
-  left: 1.5vw;
-  top: 3.5vw;
+  left: 2em;
+  top: 3.5em;
   width: 300px;
   height: fit-content;
   background-color: c.$black-bg-dark;
   text-align: center;
 }
 .pic-bg {
-    @include border-gold-shadow;
+  @include border-gold-shadow;
   width: auto;
   height: auto;
   margin: 10%;
@@ -28,7 +26,6 @@
     c.$black-fade-top,
     c.$black-fade-bottom
   );
-
 }
 .profile-pic {
   border: 1px solid c.$black-fade-top;
@@ -48,14 +45,21 @@
     c.$black-fade-bottom
   );
 }
+a {
+  color: c.$gold;
+  text-decoration: none;
+  letter-spacing: 2px;
+}
 .info-list {
   padding-left: 0px;
   list-style: none;
   li {
     margin: 30px;
   }
-
-  .download {
+}
+.download {
   @include button;
 }
+.bi-download {
+  padding-right: 15px;
 }
