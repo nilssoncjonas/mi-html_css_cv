@@ -2,20 +2,21 @@
 <html lang="sv">
   <head>
     <!-- LÄGGA TILL META TAGGAR! -->
+    <!-- <meta og:> -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jonas Nilsson | Front End Developer</title>
     <!-- LÄNKA CSS -->
-    <link rel="stylesheet" href="css/main.css" .css />
+    <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
-    <header></header>
+    <!-- <header></header> -->
     <div class="main-wrap">
+      <!-- <button class="left-side-menu-toggle mobile-only">
+        <span class="hamburger mobile-only"><i class="bi bi-info-square"></i></span>
+      </button> -->
       <aside class="left-side-menu nav">
-          <button class="left-side-menu-toggle mobile-only">
-            <span class="hamburger mobile-only"><i class="bi bi-info-square"></i></span>
-          </button>
           <div class="pic-bg">
             <!-- srcset -->
             <img
@@ -26,7 +27,6 @@
           </div>
           <h1 class="name">Jonas Nilsson</h1>
           <h2 class="title">Front End Developer</h2>
-          <!-- GÖRA OM LISTAN TILL SPAN MED FLEX? -->
           <ul class="info-list">
             <li>
               <a
@@ -65,15 +65,16 @@
         <div class="nav-sticky">
           <nav>
             <ul class="nav-list">
-              <li class="mobile-only">
-                <!-- <button class="nav__toggle">
-                <span class="hamburger"></span>
-              </button></li> -->
-              </li>
+           
 
               <li class="mobile-only">
-                <a href="#"><i class="bi bi-info-square"></i></a>
+
+                <button class="left-side-menu-toggle mobile-only">
+                  <span class="hamburger mobile-only"><i class="bi bi-info-square"></i></span>
+                </button>
+
               </li>
+              <!-- <li class="mobile-only"><i class="bi bi-info-square"></i></li> -->
               <li class="desktop-only"><a href="#">Hem</a></li>
               <li class="desktop-only"><a href="#">Om Mig</a></li>
               <li class="desktop-only"><a href="#">Projekt</a></li>

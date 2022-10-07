@@ -3,7 +3,6 @@
   body {
     background-color: c.$white;
   }
-
   .mobile-only {
     display: inline !important;
   }
@@ -17,31 +16,35 @@
   // .nav-list {
   //   pointer-events: none;
   // }
-
   .left-side-menu {
-
-    transform: translateX(-325px);
-    transition: transform 300ms cubic-bezier(.5, 0, .5, 1)
-  }
-  
-
-  
+    display: none;
+    // transform: translateX(-325px);
+    transition: transform 300ms cubic-bezier(.5, 0, .5, 1);
+  } 
   .left-side-menu-toggle {
-    position: absolute;
-    top: 2em;
-    right: 0px;
-    transform: translateX(80px);
-    background: c.$black-light;
-    padding: 1em;
-    border: 1px solid c.$gold;
+    // position: absolute;
+    // top: 2em;
+    // right: 0px;
+    // transform: translateX(80px);
+    background: transparent;
+    // padding: 1em;
+    // border: 1px solid red;
+    border: 0;
     color: c.$gold;
     font-size: 1.2em;
-    border-radius: 20px; 
-  }
-  
+    // border-radius: 20px; 
+    // display: block;
+  }  
   .nav-open .nav {
-    transform: translateX(0);
-  }
+    // transform: translateX(0);
+    display: block;
+    position: absolute;
+    inset: 5em 1.80em;
+    // top: 5em;
+    // right: auto;
+    // visibility: visible;
+    z-index: 1;
 
+  }
 
 }

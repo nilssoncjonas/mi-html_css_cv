@@ -1,5 +1,6 @@
-@use "../base/color.scss" as c;
-@import "../base/mixin";
+@use "../base/color" as c;
+@use "../base/mixin" as *;
+
 .name {
   margin: 0px;
   color: c.$gold;
@@ -9,8 +10,9 @@
 .left-side-menu {
   @include border-grey-shadow;
   position: sticky;
-  left: 2em;
-  top: 3.5em;
+  // left: 2em;
+  // top: 3vw;
+  margin: 3vw 0vw 0vw 2vw;
   width: 300px;
   height: fit-content;
   background-color: c.$black-bg-dark;

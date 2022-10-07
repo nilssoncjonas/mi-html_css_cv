@@ -1,11 +1,13 @@
-@use "base/_color.scss" as c; 
-@use "base/_font.scss";
-@use "base/_heading.scss";
-@use "responsive/_mobile.scss";
-@use "layout/_nav.scss";
-@use "layout/_aside.scss";
-@use "layout/_grid.scss";
-@import "base/_mixin";
+@use "scss/base/mixin" as *;
+@use  "scss/base/color" as c;
+@use "scss/base/heading";
+@use "scss/base/font";
+@use "scss/layout/aside";
+@use "scss/layout/nav";
+@use "scss/layout/grid";
+@use "scss/responsive/mobile";
+
+
 
 :root {
   padding: 0px;
@@ -23,16 +25,17 @@
 }
 .nav-sticky {
   position: sticky;
-  top: 0px;
+  // top: 3em;
 }
 .main-wrap {
   display: flex;
 }
 main {
   @include border-grey-shadow;
-  margin: 3vw;
+  // margin: 3vw;
+  margin: 3vw 2vw 0vw 2vw;
   background-color: c.$black-bg-dark;
-  height: auto;
+  height: 1500px;
 }
 
 .about {
