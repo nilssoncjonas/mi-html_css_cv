@@ -281,15 +281,12 @@ textarea {
   color: #303338;
   outline: none;
   border-style: none;
+  border: 2px solid #AD7F51;
+  border-radius: 25px;
   margin: 5rem;
   padding: 1rem;
   width: 50%;
   cursor: pointer;
-  border: 1px solid #AD7F51;
-  border-radius: 25px;
-  box-shadow: 0px 0px 5px 5px rgba(18, 18, 18, 0.75);
-  -webkit-box-shadow: 0px 0px 5px 5px rgba(18, 18, 18, 0.75);
-  -moz-box-shadow: 0px 0px 5px 5px rgba(18, 18, 18, 0.75);
 }
 .send-button:hover {
   background-color: #121212;
@@ -413,6 +410,7 @@ textarea {
   background-color: #121212;
   color: #D6D6D6;
   font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
 }
 
 .mobile-only, .mobile-nav {
@@ -426,7 +424,6 @@ textarea {
 
 .main-wrap {
   display: flex;
-  width: 100%;
 }
 
 main {

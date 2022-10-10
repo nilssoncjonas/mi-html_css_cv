@@ -17,8 +17,8 @@
   box-sizing: border-box;
   background-color: c.$black-bg-body;
   color: c.$white;
-  //   font-family: "Cinzel", serif;
   font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
 }
 
 
@@ -31,7 +31,7 @@
 }
 .main-wrap {
   display: flex;
-  width: 100%;
+  // width: 100%;
   // height: auto;
 }
 main {

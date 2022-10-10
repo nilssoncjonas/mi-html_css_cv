@@ -45,13 +45,14 @@ textarea {
   color: c.$black;
   outline: none;
   border-style: none;
-
+  border: 2px solid c.$gold;
+  border-radius: 25px;
   margin: 5rem;
   padding: 1rem;
 
   width: 50%;
   cursor: pointer;
-  @include border-gold-shadow;
+
   &:hover {
     background-color: c.$black-bg-body;
     color: c.$gold;
