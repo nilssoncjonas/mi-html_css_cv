@@ -1,4 +1,5 @@
 @use "scss/base/mixin" as *;
+
 @use  "scss/base/color" as c;
 @use "scss/base/heading";
 @use "scss/base/font";
@@ -20,7 +21,7 @@
 }
 
 
-.mobile-only {
+.mobile-only, .mobile-nav {
   display: none;
 }
 .nav-sticky {
@@ -63,5 +64,4 @@ main {
     flex-grow: 2;
   }
 }
-
 

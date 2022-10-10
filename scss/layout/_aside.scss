@@ -13,9 +13,14 @@
   // left: 2em;
   // top: 3vw;
   margin: 3vw 0vw 0vw 2vw;
+  
   width: 300px;
-  height: fit-content;
-  background-color: c.$black-bg-dark;
+  height: max-content;
+  // background-color: c.$black-bg-dark;
+  background-image: linear-gradient(
+    180deg,
+    c.$black-fade-top,
+    c.$black-fade-bottom);
   text-align: center;
 }
 .pic-bg {

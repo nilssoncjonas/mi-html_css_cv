@@ -1,4 +1,5 @@
 @use "../base/color" as c;
+@use "../base/mixin" as *;
 @media screen and (max-width: 1024px) {
   body {
     background-color: c.$white;
@@ -6,21 +7,20 @@
   .mobile-only {
     display: inline !important;
   }
+
   .desktop-only {
     display: none;
   }
   .bi-info-square,
   .bi-list {
-    font-size: 1.5em;
+    font-size: 2em;
   }
-  // .nav-list {
-  //   pointer-events: none;
-  // }
+
   .left-side-menu {
     display: none;
     // transform: translateX(-325px);
-    transition: transform 300ms cubic-bezier(.5, 0, .5, 1);
-  } 
+    transition: transform 300ms cubic-bezier(0.5, 0, 0.5, 1);
+  }
   .left-side-menu-toggle {
     // position: absolute;
     // top: 2em;
@@ -31,20 +31,82 @@
     // border: 1px solid red;
     border: 0;
     color: c.$gold;
-    font-size: 1.2em;
-    // border-radius: 20px; 
+    // font-size: 1.2em;
+    // border-radius: 20px;
     // display: block;
-  }  
-  .nav-open .nav {
+  }
+  .info-open .info {
     // transform: translateX(0);
     display: block;
     position: absolute;
-    inset: 5em 1.80em;
+    inset: 5rem 2rem;
     // top: 5em;
     // right: auto;
     // visibility: visible;
     z-index: 1;
-
   }
 
+  .right-side-menu-toggle {
+    background: transparent;
+    border: 0px;
+    color: c.$gold;
+  }
+
+  .mobile-nav {
+
+    @include border-gold-shadow;
+    background-image: linear-gradient(
+      180deg,
+      c.$black-fade-top,
+      c.$black-fade-bottom
+    );
+    margin: 3vw 0vw 0vw 2vw;
+    position: absolute;
+    top: 5em;
+    right: 3.5em;
+    padding: 1.5em;
+    width: 200px;
+    text-align: center;
+    ul {
+      list-style: none;
+      padding-left: 0;
+      li {
+        font-weight: 600;
+        margin: 3em auto;
+      }
+    }
+  }
+
+  .nav-open .mobile-nav {
+    display: block;
+    top: 5em;
+    right: 3.5em;
+    z-index: 1;
+  }
+
+  // .nav-sticky {
+  //   position: absolute;
+  //   inset: 4em 2em;
+  //   width: auto;
+  //   height: max-content;
+  // }
+  // nav {
+  //   width: 300px;
+  //   height: 600px;
+  //   border: 1px solid c.$gold;
+  //   border-radius: 25px;
+  // }
+  // .nav-list {
+  //   display: block;
+  //   width: 90%;
+  //   height: 600px;
+  //   padding-left: 0px;
+  //   margin: 10px 0px;
+  //   li {
+  //     border: 1px solid c.$gold;
+  //     margin: 4em 0em;
+  //     padding: 1em 0.5em;
+  //     border-radius: 15px;
+  //   }
+  // }
 }

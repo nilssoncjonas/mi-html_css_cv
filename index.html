@@ -16,7 +16,7 @@
       <!-- <button class="left-side-menu-toggle mobile-only">
         <span class="hamburger mobile-only"><i class="bi bi-info-square"></i></span>
       </button> -->
-      <aside class="left-side-menu nav">
+      <aside class="left-side-menu info">
           <div class="pic-bg">
             <!-- srcset -->
             <img
@@ -68,22 +68,29 @@
            
 
               <li class="mobile-only">
-
                 <button class="left-side-menu-toggle mobile-only">
-                  <span class="hamburger mobile-only"><i class="bi bi-info-square"></i></span>
+                  <span><i class="bi bi-info-square"></i></span>
                 </button>
-
               </li>
-              <!-- <li class="mobile-only"><i class="bi bi-info-square"></i></li> -->
               <li class="desktop-only"><a href="#">Hem</a></li>
               <li class="desktop-only"><a href="#">Om Mig</a></li>
               <li class="desktop-only"><a href="#">Projekt</a></li>
               <li class="desktop-only"><a href="#">Kontakt</a></li>
               <li class="mobile-only">
-                <a href="#"><i class="bi bi-list"></i></a>
+                <button class="right-side-menu-toggle mobile-only">
+                  <span><i class="bi bi-list"></i>
+                </button>
               </li>
             </ul>
           </nav>
+        </div>
+        <div class="mobile-nav">
+          <ul class="mobile-nav-list">
+            <li><a href="#">Hem</a></li>
+            <li><a href="#">Om Mig</a></li>
+            <li><a href="#">Projekt</a></li>
+            <li><a href="#">Kontakt</a></li>
+          </ul>
         </div>
         <section class="about">
           <div class="about-div">
@@ -172,11 +179,18 @@
       <!-- TÄNKER EN SITE MAP EL. LIKNANDE NAV MENU -->
     </footer>
     <script>
-      const navToggle = document.querySelector(".left-side-menu-toggle");
+      const l_navToggle = document.querySelector(".left-side-menu-toggle");
 
-      navToggle.addEventListener("click", () => {
+      l_navToggle.addEventListener("click", () => {
+        document.body.classList.toggle("info-open");
+      });
+      const r_navToggle = document.querySelector(".right-side-menu-toggle");
+
+      r_navToggle.addEventListener("click", () => {
         document.body.classList.toggle("nav-open");
       });
+
+
     </script>
   </body>
 </html>
