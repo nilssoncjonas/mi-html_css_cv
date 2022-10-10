@@ -2,15 +2,15 @@
 @use "../base/mixin" as *;
 
 .contact {
-  margin: 15rem auto;
+  margin: 5rem auto;
   width: 100%;
-  // border: 1px solid red;
+  text-align: center;
 }
 
 .contact-wrap {
   margin: 0 auto;
   width: 50%;
-//   border: 1px solid red;
+  padding-left: 2rem;
   text-align: center;
 }
 

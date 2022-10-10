@@ -75,7 +75,7 @@
               <li class="desktop-only"><a href="#home">Hem</a></li>
               <li class="desktop-only"><a href="#about">Om Mig</a></li>
               <li class="desktop-only"><a href="#project">Projekt</a></li>
-              <li class="desktop-only"><a href="#contact">Kontakt</a></li>
+              <li class="desktop-only"><a href="#contact-link">Kontakt</a></li>
               <li class="mobile-only">
                 <button  onclick="myFunction()" class="right-side-menu-toggle mobile-only">
                   <span><i class="bi bi-list"></i>
@@ -92,7 +92,7 @@
             <li><a href="#home">Hem</a></li>
             <li><a href="#about">Om Mig</a></li>
             <li><a href="#project">Projekt</a></li>
-            <li><a href="#contact">Kontakt</a></li>
+            <li><a href="#contact-link">Kontakt</a></li>
           </ul>
         </div>
         <section class="about">
@@ -105,22 +105,33 @@
               minus velit quasi ipsum!
             </p>
           </div>
-          <h3 class="fedu-heading">Front End Developer Utbildningen</h3>
+          <h3 class="fedu-heading" id="education">Front End Developer Utbildningen</h3>
           <div class="about-edu">
             <div>
               <h4 class="fedu-info">
                 <i class="bi bi-filetype-html"></i> HTML & CSS
               </h4>
               <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. In qui
-                repellat cumque quisquam vel ab?
+                Kursens syfte är att behandla grundläggande tekniker inom webbutveckling för att kunna ta fram 
+                fungerande webbplatser, samt att behandla tillgänglighetsanpassning av webben. </p>
+                <p>
+                Målet med kursen är att den studerande ska få en helhetsförståelse för hur man bygger korrekta 
+                webbplatser. Förmåga i yrkesrollen som Front end developer återskapa webbplatser utifrån en given 
+                design. Grundläggande kunna använda versionshanteringsverktyg
               </p>
             </div>
             <div>
               <h4><i class="bi bi-filetype-js"></i> JavaScript</h4>
               <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. In qui
-                repellat cumque quisquam vel ab?
+                Kursens syfte är att ge den studerande kunskaper i programmering generellt och färdigheter i 
+                Javascript/EcmaScript samt relaterade områden för att kunna skapa interaktiva, användarcentrerade 
+                webbplatser själv och i tillsammans med andra. </p>
+                <p>
+                Målet med kursen är att den studerande ska kunna generella begrepp inom programmering och ha 
+                en god grundläggande kunskap i Javascript, DOM-trädsmanipulation och eventdriven 
+                programmering. Detta för att skapa en helhetsförståelse för de olika delarna en webbplats byggs upp 
+                av, vad programmering innebär samt förmåga att i yrkesrollen som Front end developer ta fram 
+                fungerande, interaktiva webbapplikationer i JavaScript
               </p>
             </div>
             <div>
@@ -129,23 +140,31 @@
                 Entreprenörskap
               </h4>
               <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. In qui
-                repellat cumque quisquam vel ab?
+                Kursens syfte är att behandla verktyg för självledarskap, lärande och professionell utveckling.</p>
+                <p>
+                Målet med kursen är att den studerande ska utveckla kunskaper om de generella kompetenskraven
+                på yrkesrollen samt förmåga att ta ansvar för sin egen kompetensutveckling.  
               </p>
             </div>
             <div>
               <h4><i class="bi bi-terminal"></i> API Utveckling</h4>
               <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. In qui
-                repellat cumque quisquam vel ab?
+                Kursens syfte är att behandla grundläggande tekniker inom webbutveckling för att skapa 
+                webbplatser där information kan lagras, hanteras, analyseras och presenteras. </p>
+                <p>
+                Målet med kursen är att den studerande ska få en helhetsförståelse för användarflöden i 
+                webbapplikationer, kunna hantera och lagra information om användare samt förmåga att i 
+                yrkesrollen som Front end developer ta fram fungerande, databasdrivna webbapplikationer. Efter 
+                kursen ska den studerande kunna genomföra back end utveckling.
               </p>
             </div>
             <div>
               <h4><i class="bi bi-people"></i> LIA - Lärande I Arbete</h4>
               <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. In qui
-                repellat cumque quisquam vel ab?
-              </p>
+                Kursens syfte är att förbereda för ett självständigt utövande i yrkesrollen som Front End Developer.</p>
+                <p>
+                Målet med kursen är att den studerande ska utveckla specialiserad yrkespraktisk kompetens inom 
+                yrkesrollen Front End Developer.</p>
             </div>
           </div>
         </section>
@@ -191,7 +210,19 @@
       </main>
     </div>
     <footer>
-      <!-- TÄNKER EN SITE MAP EL. LIKNANDE NAV MENU -->
+     <ul class="footer-list">
+       <li>|</li>
+       <li><a href="#home">Hem</a></li>
+       <li>|</li>
+       <li><a href="#about">Om Mig</a></li>
+       <li>|</li>
+       <li><a href="#education">Utbildning</a></li>
+       <li>|</li>
+       <li><a href="#project">Projekt</a></li>
+       <li>|</li>
+       <li><a href="#contact">Kontakt</a></li>
+       <li>|</li>
+     </ul>
     </footer>
     <script>
       
@@ -200,11 +231,7 @@
       l_navToggle.addEventListener("click", () => {
         document.body.classList.toggle("info-open");
       });
-      // const r_navToggle = document.querySelector(".right-side-menu-toggle");
 
-      // r_navToggle.addEventListener("click", () => {
-      //   document.body.classList.toggle("nav-open");
-      // });
       function myFunction() {
   var x = document.getElementById("mobile-nav");
   if (x.style.display === "none") {

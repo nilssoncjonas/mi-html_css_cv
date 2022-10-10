@@ -25,7 +25,7 @@
 }
 
 .fedu-heading, .project-heading, .contact-heading {
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-align: center;
 }
 
@@ -148,7 +148,7 @@ nav {
   z-index: 5;
 }
 .nav-list a {
-  font-size: 1.15rem;
+  font-size: 1rem;
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -238,13 +238,15 @@ nav {
 }
 
 .contact {
-  margin: 15rem auto;
+  margin: 5rem auto;
   width: 100%;
+  text-align: center;
 }
 
 .contact-wrap {
   margin: 0 auto;
   width: 50%;
+  padding-left: 2rem;
   text-align: center;
 }
 
@@ -310,7 +312,9 @@ textarea {
 .bi-x-lg {
     font-size: 1.5rem;
   }
-  .fedu-heading, .project-heading, .contact-heading {
+  .fedu-heading,
+.project-heading,
+.contact-heading {
     font-size: 1.5rem;
     text-align: center;
   }
@@ -393,6 +397,14 @@ textarea {
     font-size: 1rem;
     width: 40%;
   }
+  .footer-list {
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .footer-list li {
+    padding: 0.75rem;
+  }
 }
 :root {
   padding: 0px;
@@ -455,4 +467,18 @@ main {
   margin: 2%;
   padding: 1%;
   flex-grow: 2;
+}
+
+footer {
+  margin: 4rem;
+}
+
+.footer-list {
+  list-style: none;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  width: 50%;
+  color: #AD7F51;
 }

@@ -67,4 +67,18 @@ main {
     flex-grow: 2;
   }
 }
+footer {
+  margin: 4rem;
+}
 
+.footer-list {
+  list-style: none;
+  // padding-left: 0;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  width: 50%;
+  color: c.$gold
+
+}
