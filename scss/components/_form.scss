@@ -1,0 +1,63 @@
+@use "../base/color" as c;
+@use "../base/mixin" as *;
+
+.contact {
+  margin: 15rem auto;
+  width: 100%;
+  // border: 1px solid red;
+}
+
+.contact-wrap {
+  margin: 0 auto;
+  width: 50%;
+//   border: 1px solid red;
+  text-align: center;
+}
+
+.input-wrap {
+  border-bottom: 2px solid c.$gold;
+  padding: 1rem;
+  width: 90%;
+}
+
+input,
+textarea {
+  background-color: transparent;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  color: c.$gold;
+  outline: none;
+  border-style: none;
+  margin: 3rem 1rem 0rem 1rem;
+  padding: 1rem 1rem 0rem 1rem;
+  border-radius: 5px;
+  resize: none;
+  width: 70%;
+}
+
+.send-button {
+  background-color: c.$gold;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: c.$black;
+  outline: none;
+  border-style: none;
+
+  margin: 5rem;
+  padding: 1rem;
+
+  width: 50%;
+  cursor: pointer;
+  @include border-gold-shadow;
+  &:hover {
+    background-color: c.$black-bg-body;
+    color: c.$gold;
+    transition: all 0.3s ease 0s;
+  }
+  &:not(:hover) {
+    transition: all 0-3s ease 0s;
+  }
+}

@@ -3,15 +3,16 @@
     margin: 0px;
     color: c.$gold;
     font-family: "Comforter Brush", cursive;
-    font-size: 3.5em;
+    font-size: 3.5rem;
   }
 
-.fedu-heading {
-    font-size: 1em;
+.fedu-heading, .project-heading, .contact-heading  {
+    font-size: 2rem;
     text-align: center;
   } 
   
   .fedu-info {
-    font-size: 1em;
+    font-size: 1rem;
     margin: 1%;
   }
+  

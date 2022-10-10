@@ -1,11 +1,12 @@
 @use "scss/base/mixin" as *;
 
 @use  "scss/base/color" as c;
-@use "scss/base/heading";
 @use "scss/base/font";
+@use "scss/base/heading";
 @use "scss/layout/aside";
 @use "scss/layout/nav";
-@use "scss/layout/grid";
+@use "scss/components/grid";
+@use "scss/components/form";
 @use "scss/responsive/mobile";
 
 
@@ -30,18 +31,20 @@
 }
 .main-wrap {
   display: flex;
+  width: 100%;
+  // height: auto;
 }
 main {
   @include border-grey-shadow;
   // margin: 3vw;
-  margin: 3vw 2vw 0vw 2vw;
+  margin: 3em 2em;
   background-color: c.$black-bg-dark;
-  height: 1500px;
 }
 
 .about {
-  margin: 0 auto;
+  margin: 5rem auto 10rem auto;
   width: 100%;
+  border-bottom: 2px solid c.$gold;
 }
 
 .about-div {

@@ -4,7 +4,7 @@
   top: 0px;
 }
 nav {
-  width: 60%;
+  width: 80%;
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -17,22 +17,23 @@ nav {
   border-radius: 0px 0px 25px 25px;
 }
 .nav-list {
-  width: 90%;
+  width: 100%;
   list-style: none;
   display: flex;
   justify-content: space-around;
   padding-left: 0px;
   margin: 10px 0px;
+  z-index: 5;
   a {
-    font-size: 1em;
+    font-size: 1.15rem;
     font-weight: 500;
     text-transform: uppercase;
-    letter-spacing: 5px;
+    letter-spacing: 3px;
     text-decoration: none;
     color: c.$gold;
     border: 1px solid transparent;
-    padding: 5px 15px;
-    border-radius: 5px;
+    padding: 0.25rem 0.75rem;
+    border-radius: 10px;
     &:hover {
       background-color: c.$black-bg-dark;
       border: 1px solid c.$gold;
@@ -44,14 +45,3 @@ nav {
   }
 }
 
-@media screen and (max-width: 1350px) {
-  nav {
-    width: 70%;
-  }
-  .nav-list {
-    width: 100%;
-    a {
-      padding: 5px 10px;
-    }
-  }
-}

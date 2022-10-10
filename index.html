@@ -12,7 +12,7 @@
   </head>
   <body>
     <!-- <header></header> -->
-    <div class="main-wrap">
+    <div class="main-wrap" id="home">
       <!-- <button class="left-side-menu-toggle mobile-only">
         <span class="hamburger mobile-only"><i class="bi bi-info-square"></i></span>
       </button> -->
@@ -72,29 +72,32 @@
                   <span><i class="bi bi-info-square"></i></span>
                 </button>
               </li>
-              <li class="desktop-only"><a href="#">Hem</a></li>
-              <li class="desktop-only"><a href="#">Om Mig</a></li>
-              <li class="desktop-only"><a href="#">Projekt</a></li>
-              <li class="desktop-only"><a href="#">Kontakt</a></li>
+              <li class="desktop-only"><a href="#home">Hem</a></li>
+              <li class="desktop-only"><a href="#about">Om Mig</a></li>
+              <li class="desktop-only"><a href="#project">Projekt</a></li>
+              <li class="desktop-only"><a href="#contact">Kontakt</a></li>
               <li class="mobile-only">
-                <button class="right-side-menu-toggle mobile-only">
+                <button  onclick="myFunction()" class="right-side-menu-toggle mobile-only">
                   <span><i class="bi bi-list"></i>
                 </button>
               </li>
             </ul>
           </nav>
         </div>
-        <div class="mobile-nav">
+        <div class="mobile-nav" id="mobile-nav">
           <ul class="mobile-nav-list">
-            <li><a href="#">Hem</a></li>
-            <li><a href="#">Om Mig</a></li>
-            <li><a href="#">Projekt</a></li>
-            <li><a href="#">Kontakt</a></li>
+            <li>                <button onclick="myFunction()" class="right-side-menu-toggle mobile-only">
+              <span><i class="bi bi-x-lg"></i></span>
+            </button></li>
+            <li><a href="#home">Hem</a></li>
+            <li><a href="#about">Om Mig</a></li>
+            <li><a href="#project">Projekt</a></li>
+            <li><a href="#contact">Kontakt</a></li>
           </ul>
         </div>
         <section class="about">
           <div class="about-div">
-            <h3 class="about-h">Om Mig</h3>
+            <h3 class="about-h" id="about">Om Mig</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat,
               hic. Laborum doloribus obcaecati, tempora placeat modi explicabo
@@ -147,50 +150,69 @@
           </div>
         </section>
 
-        <!-- <section class="project">
-          <h3>Mina Projekt</h3>
+        <section class="project">
+          <h3 id="project" class="project-heading">Mina Projekt</h3>
           <div class="grid-parent">
-            <div class="div1">Projekt </div>
-            <div class="div2">Projekt </div>
-            <div class="div3">Projekt </div>
-            <div class="div4">Projekt </div>
-            <div class="div5">Projekt </div>
-            <div class="div6">Projekt </div>
+            <div class="div1"><a href="https://nilssoncjonas.github.io/mi-Barbershop/" target="_blank"><img src="/img/barbershop-assignment-600w.webp" alt="Barbershop"></a> </div>
+            <div class="div2"><img src="/img/mobile-product-card.webp" alt="Mobilvy av Produkt Kort"></div>
+            <div class="div3"><img src="/img/html.webp" alt="Hyper Text Markup Language"></div>
+            <div class="div4"><img src="/img/desktop-product-card.webp" alt="Skrivbordsvy av Produkt Kort"></div>
+            <div class="div5"><img src="/img/css.webp" alt="Cascading Style Sheet"> </div>
+            <div class="div6"><img src="/img/js.webp" alt="JavaScript"></div>
           </div> 
-        </section> -->
-        <!-- <section class="contact">
-          <h3>Kontakta Mig</h3>
-          <form action="" method="post">
-            <label for="name">Namn:</label>
-            <input type="text" id="name" name="name" autocomplete="off" />
-            <label for="mail">E-Post:</label>
-            <input type="email" name="mail" id="mail" autocomplete="off" />
-            <label for="tel">Telefon: </label>
-            <input type="tel" name="tel" id="tel" autocomplete="off" />
-            <label for="text">Meddelande:</label>
-            <textarea name="text" id="text" cols="40" rows="10"></textarea>
-            <button type="submit">Skicka</button>
+        </section>
+
+        <section class="contact">
+          <h3 id="contact" class="contact-heading">Kontakta Mig</h3>
+          <div class="contact-wrap">
+          <form action="#" method="post">
+            <span class="input-wrap">
+              <label for="name"></label>
+              <input type="text" id="name" name="name" autocomplete="off" placeholder="Namn:" />
+              </span>
+              <span class="input-wrap">
+              <label for="tel"></label>
+              <input type="tel" name="tel" id="tel" autocomplete="off" placeholder="Telefon:" />
+            </span>
+            <span class="input-wrap">
+              <label for="mail"></label>
+              <input type="email" name="mail" id="mail" autocomplete="off" placeholder="E-Post" />
+            </span>
+            <span class="input-wrap">
+            <label for="text"></label>
+            <textarea name="text" id="text" cols="40" rows="10" placeholder="Meddelande:"></textarea>
+          </span>
+
+            <button type="submit" class="send-button">Skicka</button>
+
           </form>
-          
-        </section> -->
+        </div>
+        </section>
       </main>
     </div>
     <footer>
       <!-- TÄNKER EN SITE MAP EL. LIKNANDE NAV MENU -->
     </footer>
     <script>
+      
       const l_navToggle = document.querySelector(".left-side-menu-toggle");
 
       l_navToggle.addEventListener("click", () => {
         document.body.classList.toggle("info-open");
       });
-      const r_navToggle = document.querySelector(".right-side-menu-toggle");
+      // const r_navToggle = document.querySelector(".right-side-menu-toggle");
 
-      r_navToggle.addEventListener("click", () => {
-        document.body.classList.toggle("nav-open");
-      });
-
-
+      // r_navToggle.addEventListener("click", () => {
+      //   document.body.classList.toggle("nav-open");
+      // });
+      function myFunction() {
+  var x = document.getElementById("mobile-nav");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+} 
     </script>
   </body>
 </html>
