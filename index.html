@@ -1,72 +1,74 @@
 <!DOCTYPE html>
 <html lang="sv">
   <head>
-    <!-- LÄGGA TILL META TAGGAR! -->
-    <!-- <meta og:> -->
+    <meta property="og:title" content="Jonas Nilsson Front End Developer">
+    <meta property="og:description" content="Här ser ni mina projekt och ni hittar även mina kontaktuppgifter">
+    <meta property="og:image" content="#">
+    <meta name="description"
+      content="Jonas Nilssons CV/Portfolio sida. Här finns mina projekt jag har jobbat med och även mina kontakt uppgifter om ni skulle vilja komma i kontakt med mig!"
+    />
+    <meta name="keywords"
+      content="html, css, javascript, front end, front end developer, websida, portfolio, cv, hemsida"
+    />
+    <meta name="author" content="Jonas Nilsson" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jonas Nilsson | Front End Developer</title>
-    <!-- LÄNKA CSS -->
+    <link rel="shortcut icon" href="/img/1769078.png" type="image/x-icon">
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
     <!-- <header></header> -->
     <div class="main-wrap" id="home">
-      <!-- <button class="left-side-menu-toggle mobile-only">
-        <span class="hamburger mobile-only"><i class="bi bi-info-square"></i></span>
-      </button> -->
       <aside class="left-side-menu info">
-          <div class="pic-bg">
-            <!-- srcset -->
-            <img
-              src="img/profile-pic-200w.webp"
-              class="profile-pic"
-              alt="Profile Pictrue"
-            />
-          </div>
-          <h1 class="name">Jonas Nilsson</h1>
-          <h2 class="title">Front End Developer</h2>
-          <ul class="info-list">
-            <li>
-              <a
-                href="https://www.linkedin.com/in/jonas-nilsson-4b8886226/"
-                target="_blank"
-                ><i class="bi bi-linkedin"></i>Jonas Nilsson</a
-              >
-            </li>
-            <li>
-              <a href="https://github.com/nilssoncjonas" target="_blank"
-                ><i class="bi bi-github"></i>nilssoncjonas</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://www.google.se/maps/place/Kristianstad/@56.0257281,14.1106199,13z/data=!3m1!4b1!4m5!3m4!1s0x4654034d24249807:0x4019078290e7ae0!8m2!3d56.0293936!4d14.1566779?hl=sv"
-                target="_blank"
-                ><i class="bi bi-geo-alt"></i>Kristianstad</a
-              >
-            </li>
-            <li>
-              <a href="#"
-                ><i class="bi bi-envelope"></i>nilssoncjonas@gmail.com</a
-              >
-            </li>
-            <li>
-              <a href="#" class="download"
-                ><i class="bi bi-download"></i>Download CV</a
-              >
-            </li>
-          </ul>
-        
+        <div class="pic-bg">
+          <!-- srcset -->
+          <img
+            src="img/profile-pic-200w.webp"
+            class="profile-pic"
+            alt="Profile Pictrue"
+          />
+        </div>
+        <h1 class="name">Jonas Nilsson</h1>
+        <h2 class="title">Front End Developer</h2>
+        <ul class="info-list">
+          <li>
+            <a
+              href="https://www.linkedin.com/in/jonas-nilsson-4b8886226/"
+              target="_blank"
+              ><i class="bi bi-linkedin"></i>Jonas Nilsson</a
+            >
+          </li>
+          <li>
+            <a href="https://github.com/nilssoncjonas" target="_blank"
+              ><i class="bi bi-github"></i>nilssoncjonas</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.google.se/maps/place/Kristianstad/@56.0257281,14.1106199,13z/data=!3m1!4b1!4m5!3m4!1s0x4654034d24249807:0x4019078290e7ae0!8m2!3d56.0293936!4d14.1566779?hl=sv"
+              target="_blank"
+              ><i class="bi bi-geo-alt"></i>Kristianstad</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><i class="bi bi-envelope"></i>nilssoncjonas@gmail.com</a
+            >
+          </li>
+          <li>
+            <a href="#" class="download"
+              ><i class="bi bi-download"></i>Download CV</a
+            >
+          </li>
+        </ul>
       </aside>
 
       <main>
         <div class="nav-sticky">
           <nav>
             <ul class="nav-list">
-           
-
               <li class="mobile-only">
                 <button class="left-side-menu-toggle mobile-only">
                   <span><i class="bi bi-info-square"></i></span>
@@ -77,8 +79,11 @@
               <li class="desktop-only"><a href="#project">Projekt</a></li>
               <li class="desktop-only"><a href="#contact-link">Kontakt</a></li>
               <li class="mobile-only">
-                <button  onclick="myFunction()" class="right-side-menu-toggle mobile-only">
-                  <span><i class="bi bi-list"></i>
+                <button
+                  onclick="myFunction()"
+                  class="right-side-menu-toggle mobile-only"
+                >
+                  <span><i class="bi bi-list"></i></span>
                 </button>
               </li>
             </ul>
@@ -86,9 +91,14 @@
         </div>
         <div class="mobile-nav" id="mobile-nav">
           <ul class="mobile-nav-list">
-            <li>                <button onclick="myFunction()" class="right-side-menu-toggle mobile-only">
-              <span><i class="bi bi-x-lg"></i></span>
-            </button></li>
+            <li>
+              <button
+                onclick="myFunction()"
+                class="right-side-menu-toggle mobile-only"
+              >
+                <span><i class="bi bi-x-lg"></i></span>
+              </button>
+            </li>
             <li><a href="#home">Hem</a></li>
             <li><a href="#about">Om Mig</a></li>
             <li><a href="#project">Projekt</a></li>
@@ -105,33 +115,44 @@
               minus velit quasi ipsum!
             </p>
           </div>
-          <h3 class="fedu-heading" id="education">Front End Developer Utbildningen</h3>
+          <h3 class="fedu-heading" id="education">
+            Front End Developer Utbildningen
+          </h3>
           <div class="about-edu">
             <div>
               <h4 class="fedu-info">
                 <i class="bi bi-filetype-html"></i> HTML & CSS
               </h4>
               <p>
-                Kursens syfte är att behandla grundläggande tekniker inom webbutveckling för att kunna ta fram 
-                fungerande webbplatser, samt att behandla tillgänglighetsanpassning av webben. </p>
-                <p>
-                Målet med kursen är att den studerande ska få en helhetsförståelse för hur man bygger korrekta 
-                webbplatser. Förmåga i yrkesrollen som Front end developer återskapa webbplatser utifrån en given 
-                design. Grundläggande kunna använda versionshanteringsverktyg
+                Kursens syfte är att behandla grundläggande tekniker inom
+                webbutveckling för att kunna ta fram fungerande webbplatser,
+                samt att behandla tillgänglighetsanpassning av webben.
+              </p>
+              <p>
+                Målet med kursen är att den studerande ska få en
+                helhetsförståelse för hur man bygger korrekta webbplatser.
+                Förmåga i yrkesrollen som Front end developer återskapa
+                webbplatser utifrån en given design. Grundläggande kunna använda
+                versionshanteringsverktyg
               </p>
             </div>
             <div>
               <h4><i class="bi bi-filetype-js"></i> JavaScript</h4>
               <p>
-                Kursens syfte är att ge den studerande kunskaper i programmering generellt och färdigheter i 
-                Javascript/EcmaScript samt relaterade områden för att kunna skapa interaktiva, användarcentrerade 
-                webbplatser själv och i tillsammans med andra. </p>
-                <p>
-                Målet med kursen är att den studerande ska kunna generella begrepp inom programmering och ha 
-                en god grundläggande kunskap i Javascript, DOM-trädsmanipulation och eventdriven 
-                programmering. Detta för att skapa en helhetsförståelse för de olika delarna en webbplats byggs upp 
-                av, vad programmering innebär samt förmåga att i yrkesrollen som Front end developer ta fram 
-                fungerande, interaktiva webbapplikationer i JavaScript
+                Kursens syfte är att ge den studerande kunskaper i programmering
+                generellt och färdigheter i Javascript/EcmaScript samt
+                relaterade områden för att kunna skapa interaktiva,
+                användarcentrerade webbplatser själv och i tillsammans med
+                andra.
+              </p>
+              <p>
+                Målet med kursen är att den studerande ska kunna generella
+                begrepp inom programmering och ha en god grundläggande kunskap i
+                Javascript, DOM-trädsmanipulation och eventdriven programmering.
+                Detta för att skapa en helhetsförståelse för de olika delarna en
+                webbplats byggs upp av, vad programmering innebär samt förmåga
+                att i yrkesrollen som Front end developer ta fram fungerande,
+                interaktiva webbapplikationer i JavaScript
               </p>
             </div>
             <div>
@@ -140,31 +161,42 @@
                 Entreprenörskap
               </h4>
               <p>
-                Kursens syfte är att behandla verktyg för självledarskap, lärande och professionell utveckling.</p>
-                <p>
-                Målet med kursen är att den studerande ska utveckla kunskaper om de generella kompetenskraven
-                på yrkesrollen samt förmåga att ta ansvar för sin egen kompetensutveckling.  
+                Kursens syfte är att behandla verktyg för självledarskap,
+                lärande och professionell utveckling.
+              </p>
+              <p>
+                Målet med kursen är att den studerande ska utveckla kunskaper om
+                de generella kompetenskraven på yrkesrollen samt förmåga att ta
+                ansvar för sin egen kompetensutveckling.
               </p>
             </div>
             <div>
               <h4><i class="bi bi-terminal"></i> API Utveckling</h4>
               <p>
-                Kursens syfte är att behandla grundläggande tekniker inom webbutveckling för att skapa 
-                webbplatser där information kan lagras, hanteras, analyseras och presenteras. </p>
-                <p>
-                Målet med kursen är att den studerande ska få en helhetsförståelse för användarflöden i 
-                webbapplikationer, kunna hantera och lagra information om användare samt förmåga att i 
-                yrkesrollen som Front end developer ta fram fungerande, databasdrivna webbapplikationer. Efter 
-                kursen ska den studerande kunna genomföra back end utveckling.
+                Kursens syfte är att behandla grundläggande tekniker inom
+                webbutveckling för att skapa webbplatser där information kan
+                lagras, hanteras, analyseras och presenteras.
+              </p>
+              <p>
+                Målet med kursen är att den studerande ska få en
+                helhetsförståelse för användarflöden i webbapplikationer, kunna
+                hantera och lagra information om användare samt förmåga att i
+                yrkesrollen som Front end developer ta fram fungerande,
+                databasdrivna webbapplikationer. Efter kursen ska den studerande
+                kunna genomföra back end utveckling.
               </p>
             </div>
             <div>
               <h4><i class="bi bi-people"></i> LIA - Lärande I Arbete</h4>
               <p>
-                Kursens syfte är att förbereda för ett självständigt utövande i yrkesrollen som Front End Developer.</p>
-                <p>
-                Målet med kursen är att den studerande ska utveckla specialiserad yrkespraktisk kompetens inom 
-                yrkesrollen Front End Developer.</p>
+                Kursens syfte är att förbereda för ett självständigt utövande i
+                yrkesrollen som Front End Developer.
+              </p>
+              <p>
+                Målet med kursen är att den studerande ska utveckla
+                specialiserad yrkespraktisk kompetens inom yrkesrollen Front End
+                Developer.
+              </p>
             </div>
           </div>
         </section>
@@ -172,60 +204,105 @@
         <section class="project">
           <h3 id="project" class="project-heading">Mina Projekt</h3>
           <div class="grid-parent">
-            <div class="div1"><a href="https://nilssoncjonas.github.io/mi-Barbershop/" target="_blank"><img src="/img/barbershop-assignment-600w.webp" alt="Barbershop"></a> </div>
-            <div class="div2"><img src="/img/mobile-product-card.webp" alt="Mobilvy av Produkt Kort"></div>
-            <div class="div3"><img src="/img/html.webp" alt="Hyper Text Markup Language"></div>
-            <div class="div4"><img src="/img/desktop-product-card.webp" alt="Skrivbordsvy av Produkt Kort"></div>
-            <div class="div5"><img src="/img/css.webp" alt="Cascading Style Sheet"> </div>
-            <div class="div6"><img src="/img/js.webp" alt="JavaScript"></div>
-          </div> 
+            <div class="div1">
+              <a
+                href="https://nilssoncjonas.github.io/mi-Barbershop/"
+                target="_blank"
+                ><img
+                  src="/img/barbershop-assignment-600w.webp"
+                  alt="Barbershop"
+              /></a>
+            </div>
+            <div class="div2">
+              <img
+                src="/img/mobile-product-card.webp"
+                alt="Mobilvy av Produkt Kort"
+              />
+            </div>
+            <div class="div3">
+              <img src="/img/html.webp" alt="Hyper Text Markup Language" />
+            </div>
+            <div class="div4">
+              <img
+                src="/img/desktop-product-card.webp"
+                alt="Skrivbordsvy av Produkt Kort"
+              />
+            </div>
+            <div class="div5">
+              <img src="/img/css.webp" alt="Cascading Style Sheet" />
+            </div>
+            <div class="div6"><img src="/img/js.webp" alt="JavaScript" /></div>
+          </div>
         </section>
 
         <section class="contact">
           <h3 id="contact" class="contact-heading">Kontakta Mig</h3>
           <div class="contact-wrap">
-          <form action="#" method="post">
-            <span class="input-wrap">
-              <label for="name"></label>
-              <input type="text" id="name" name="name" autocomplete="off" placeholder="Namn:" />
+            <form action="#" method="post">
+              <span class="input-wrap">
+                <label for="name"></label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  autocomplete="off"
+                  placeholder="Namn:"
+                />
               </span>
               <span class="input-wrap">
-              <label for="tel"></label>
-              <input type="tel" name="tel" id="tel" autocomplete="off" placeholder="Telefon:" />
-            </span>
-            <span class="input-wrap">
-              <label for="mail"></label>
-              <input type="email" name="mail" id="mail" autocomplete="off" placeholder="E-Post" />
-            </span>
-            <span class="input-wrap">
-            <label for="text"></label>
-            <textarea name="text" id="text" cols="40" rows="10" placeholder="Meddelande:"></textarea>
-          </span>
+                <label for="tel"></label>
+                <input
+                  type="tel"
+                  name="tel"
+                  id="tel"
+                  autocomplete="off"
+                  placeholder="Telefon:"
+                />
+              </span>
+              <span class="input-wrap">
+                <label for="mail"></label>
+                <input
+                  type="email"
+                  name="mail"
+                  id="mail"
+                  autocomplete="off"
+                  placeholder="E-Post"
+                />
+              </span>
+              <span class="input-wrap">
+                <label for="text"></label>
+                <textarea
+                  name="text"
+                  id="text"
+                  cols="40"
+                  rows="10"
+                  placeholder="Meddelande:"
+                ></textarea>
+              </span>
 
-            <button type="submit" class="send-button">Skicka</button>
-
-          </form>
-        </div>
+              <button type="submit" class="send-button">Skicka</button>
+            </form>
+          </div>
         </section>
       </main>
     </div>
     <footer>
-     <ul class="footer-list">
-       <li>|</li>
-       <li><a href="#home">Hem</a></li>
-       <li>|</li>
-       <li><a href="#about">Om Mig</a></li>
-       <li>|</li>
-       <li><a href="#education">Utbildning</a></li>
-       <li>|</li>
-       <li><a href="#project">Projekt</a></li>
-       <li>|</li>
-       <li><a href="#contact">Kontakt</a></li>
-       <li>|</li>
-     </ul>
+      <ul class="footer-list">
+        <li>|</li>
+        <li><a href="#home">Hem</a></li>
+        <li>|</li>
+        <li><a href="#about">Om Mig</a></li>
+        <li>|</li>
+        <li><a href="#education">Utbildning</a></li>
+        <li>|</li>
+        <li><a href="#project">Projekt</a></li>
+        <li>|</li>
+        <li><a href="#contact">Kontakt</a></li>
+        <li>|</li>
+      </ul>
+      &copy; Jonas Nilsson
     </footer>
     <script>
-      
       const l_navToggle = document.querySelector(".left-side-menu-toggle");
 
       l_navToggle.addEventListener("click", () => {
@@ -233,13 +310,13 @@
       });
 
       function myFunction() {
-  var x = document.getElementById("mobile-nav");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-} 
+        var x = document.getElementById("mobile-nav");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
     </script>
   </body>
 </html>
