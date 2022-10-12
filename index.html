@@ -3,69 +3,60 @@
   <head>
     <meta property="og:title" content="Jonas Nilsson Front End Developer">
     <meta property="og:description" content="Här ser ni mina projekt och ni hittar även mina kontaktuppgifter">
-    <meta property="og:image" content="#">
+    <meta property="og:image" content="img/meta-og-picture-250w.webp">
     <meta name="description"
       content="Jonas Nilssons CV/Portfolio sida. Här finns mina projekt jag har jobbat med och även mina kontakt uppgifter om ni skulle vilja komma i kontakt med mig!"
-    />
+    >
     <meta name="keywords"
       content="html, css, javascript, front end, front end developer, websida, portfolio, cv, hemsida"
-    />
-    <meta name="author" content="Jonas Nilsson" />
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    >
+    <meta name="author" content="Jonas Nilsson" >
+    <meta charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <title>Jonas Nilsson | Front End Developer</title>
-    <link rel="shortcut icon" href="/img/1769078.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/main.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img//favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">    
+
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <!-- <header></header> -->
+    <!-- Sidoinformationen med profilbilden -->
     <div class="main-wrap" id="home">
       <aside class="left-side-menu info">
         <div class="pic-bg">
-          <!-- srcset -->
-          <img
-            src="img/profile-pic-200w.webp"
-            class="profile-pic"
-            alt="Profile Pictrue"
-          />
+          <img src="img/profile-pic-200w.webp" class="profile-pic" alt="Profile Pictrue" srcset="/img/profile-pic-200w.webp 200w, img/profile-pic-500w.webp 500w">
         </div>
         <h1 class="name">Jonas Nilsson</h1>
         <h2 class="title">Front End Developer</h2>
         <ul class="info-list">
           <li>
             <a
-              href="https://www.linkedin.com/in/jonas-nilsson-4b8886226/"
-              target="_blank"
-              ><i class="bi bi-linkedin"></i>Jonas Nilsson</a
+              href="https://www.linkedin.com/in/jonas-nilsson-4b8886226/" target="_blank">
+              <i class="bi bi-linkedin"></i>Jonas Nilsson</a>
+          </li>
+          <li>
+            <a href="https://github.com/nilssoncjonas" target="_blank">
+              <i class="bi bi-github"></i>nilssoncjonas</a>
+          </li>
+          <li>
+            <a href="https://www.google.se/maps/place/Kristianstad/@56.0257281,14.1106199,13z/data=!3m1!4b1!4m5!3m4!1s0x4654034d24249807:0x4019078290e7ae0!8m2!3d56.0293936!4d14.1566779?hl=sv"
+              target="_blank"><i class="bi bi-geo-alt"></i>Kristianstad</a
             >
           </li>
           <li>
-            <a href="https://github.com/nilssoncjonas" target="_blank"
-              ><i class="bi bi-github"></i>nilssoncjonas</a
-            >
+            <a href="#"><i class="bi bi-envelope"></i>nilssoncjonas@gmail.com</a>
           </li>
           <li>
-            <a
-              href="https://www.google.se/maps/place/Kristianstad/@56.0257281,14.1106199,13z/data=!3m1!4b1!4m5!3m4!1s0x4654034d24249807:0x4019078290e7ae0!8m2!3d56.0293936!4d14.1566779?hl=sv"
-              target="_blank"
-              ><i class="bi bi-geo-alt"></i>Kristianstad</a
-            >
-          </li>
-          <li>
-            <a href="#"
-              ><i class="bi bi-envelope"></i>nilssoncjonas@gmail.com</a
-            >
-          </li>
-          <li>
-            <a href="#" class="download"
-              ><i class="bi bi-download"></i>Download CV</a
-            >
+            <a href="/jonas-nilsson-cv-front-end-developer.pdf" class="download"><i class="bi bi-download"></i>Download CV</a>
           </li>
         </ul>
       </aside>
 
       <main>
+        <!-- Navbar börjar här -->
         <div class="nav-sticky">
           <nav>
             <ul class="nav-list">
@@ -79,42 +70,35 @@
               <li class="desktop-only"><a href="#project">Projekt</a></li>
               <li class="desktop-only"><a href="#contact-link">Kontakt</a></li>
               <li class="mobile-only">
-                <button
-                  onclick="myFunction()"
-                  class="right-side-menu-toggle mobile-only"
-                >
-                  <span><i class="bi bi-list"></i></span>
-                </button>
-              </li>
-            </ul>
-          </nav>
-        </div>
-        <div class="mobile-nav" id="mobile-nav">
-          <ul class="mobile-nav-list">
-            <li>
-              <button
-                onclick="myFunction()"
-                class="right-side-menu-toggle mobile-only"
-              >
-                <span><i class="bi bi-x-lg"></i></span>
+                <button onclick="myFunction()" class="right-side-menu-toggle mobile-only">
+                <span><i class="bi bi-list"></i></span>
               </button>
             </li>
-            <li><a href="#home">Hem</a></li>
-            <li><a href="#about">Om Mig</a></li>
-            <li><a href="#project">Projekt</a></li>
-            <li><a href="#contact-link">Kontakt</a></li>
           </ul>
+          <!-- Nedan är för navbaren till mobilvy -->
+            <div class="mobile-nav" id="mobile-nav">
+              <ul class="mobile-nav-list">
+                <li>
+                  <button onclick="myFunction()"class="right-side-menu-toggle mobile-only">
+                    <span><i class="bi bi-x-lg"></i></span>
+                  </button>
+                </li>
+                <li><a href="#home">Hem</a></li>
+                <li><a href="#about">Om Mig</a></li>
+                <li><a href="#project">Projekt</a></li>
+                <li><a href="#contact-link">Kontakt</a></li>
+              </ul>
+            </div>
+          </nav>
         </div>
+        <!-- Nedan börjar huvudinnehållet -->
         <section class="about">
           <div class="about-div">
             <h3 class="about-h" id="about">Om Mig</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat,
-              hic. Laborum doloribus obcaecati, tempora placeat modi explicabo
-              dignissimos similique sint fugit ipsam provident cum sunt nesciunt
-              minus velit quasi ipsum!
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo mollitia perferendis odio distinctio? Modi earum fuga eaque? Perferendis voluptate, dolore laboriosam ut libero commodi, fuga sit, cupiditate facilis nisi neque.
             </p>
           </div>
+          <!-- Info om Utbildningen -->
           <h3 class="fedu-heading" id="education">
             Front End Developer Utbildningen
           </h3>
@@ -200,92 +184,59 @@
             </div>
           </div>
         </section>
-
+        <!-- Projektdelen börjar här -->
         <section class="project">
           <h3 id="project" class="project-heading">Mina Projekt</h3>
-          <div class="grid-parent">
-            <div class="div1">
-              <a
-                href="https://nilssoncjonas.github.io/mi-Barbershop/"
-                target="_blank"
-                ><img
-                  src="/img/barbershop-assignment-600w.webp"
-                  alt="Barbershop"
-              /></a>
-            </div>
-            <div class="div2">
-              <img
-                src="/img/mobile-product-card.webp"
-                alt="Mobilvy av Produkt Kort"
-              />
-            </div>
-            <div class="div3">
-              <img src="/img/html.webp" alt="Hyper Text Markup Language" />
-            </div>
-            <div class="div4">
-              <img
-                src="/img/desktop-product-card.webp"
-                alt="Skrivbordsvy av Produkt Kort"
-              />
-            </div>
-            <div class="div5">
-              <img src="/img/css.webp" alt="Cascading Style Sheet" />
-            </div>
-            <div class="div6"><img src="/img/js.webp" alt="JavaScript" /></div>
-          </div>
-        </section>
+          <div class="project-wrap">
+            <div>
+              <a href="https://nilssoncjonas.github.io/mi-Barbershop/" target="_blank"><img src="/img/barbershop-assignment-600w.webp" alt="Barbershop, Första inlämningsuppgiften på HTML & CSS kursen."/></a>
+                <p>
+                  HTML & CSS Kursens första inlämningsuppgift.
 
+                </p>
+            </div>
+            <div>
+              <img src="/img/jn-cv-portfolio-600w.webp" alt="Denna CV/Portfolio sida.">
+                <p>
+                  Denna CV/Portfolio-sida.
+                </p>
+            </div>            
+            <div>
+              <a href="https://nilssoncjonas.github.io/Frontend-Mentor_Product-preview-card/" target="_blank"><img src="/img/desktop-product-card.webp" alt="Skrivbordsvy av Produkt Kort från Front End Mentor.."></a>
+              <p>
+                Projekt från Front End Mentor.
+              </p>
+            </div>
+          </section>
+          <!-- Kontaktdelen börjar här -->
         <section class="contact">
           <h3 id="contact" class="contact-heading">Kontakta Mig</h3>
           <div class="contact-wrap">
             <form action="#" method="post">
               <span class="input-wrap">
                 <label for="name"></label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  autocomplete="off"
-                  placeholder="Namn:"
-                />
+                <input type="text" id="name" name="name" autocomplete="off" placeholder="Namn:">
               </span>
               <span class="input-wrap">
                 <label for="tel"></label>
-                <input
-                  type="tel"
-                  name="tel"
-                  id="tel"
-                  autocomplete="off"
-                  placeholder="Telefon:"
-                />
+                <input type="tel" name="tel" id="tel" autocomplete="off" placeholder="Telefon:">
               </span>
               <span class="input-wrap">
                 <label for="mail"></label>
-                <input
-                  type="email"
-                  name="mail"
-                  id="mail"
-                  autocomplete="off"
-                  placeholder="E-Post"
-                />
+                <input type="email" name="mail" id="mail" autocomplete="off" placeholder="E-Post">
               </span>
               <span class="input-wrap">
                 <label for="text"></label>
-                <textarea
-                  name="text"
-                  id="text"
-                  cols="40"
-                  rows="10"
-                  placeholder="Meddelande:"
-                ></textarea>
+                <textarea name="text" id="text" cols="40" rows="10" placeholder="Meddelande:">                  
+                </textarea>
               </span>
-
               <button type="submit" class="send-button">Skicka</button>
             </form>
           </div>
         </section>
       </main>
     </div>
+    <!-- Footerdelen börjar här -->
     <footer>
       <ul class="footer-list">
         <li>|</li>
@@ -300,15 +251,16 @@
         <li><a href="#contact">Kontakt</a></li>
         <li>|</li>
       </ul>
-      &copy; Jonas Nilsson
+      <div class="footer-info">
+        2022 &copy; Jonas Nilsson
+      </div>
     </footer>
+    <!-- Javascript som styr button i mobilvy -->
     <script>
       const l_navToggle = document.querySelector(".left-side-menu-toggle");
-
       l_navToggle.addEventListener("click", () => {
         document.body.classList.toggle("info-open");
       });
-
       function myFunction() {
         var x = document.getElementById("mobile-nav");
         if (x.style.display === "none") {

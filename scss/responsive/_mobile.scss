@@ -1,5 +1,7 @@
 @use "../base/color" as c;
 @use "../base/mixin" as *;
+
+// Denna scss styr media query för mobilvy
 @media screen and (max-width: 1024px) {
   .mobile-only {
     display: inline !important;
@@ -8,11 +10,7 @@
   .desktop-only {
     display: none;
   }
-  .bi-info-square,
-  .bi-list,
-  .bi-x-lg {
-    font-size: 1.5rem;
-  }
+
   .fedu-heading,
   .project-heading,
   .contact-heading {
@@ -29,7 +27,6 @@
   }
   .left-side-menu-toggle {
     background: transparent;
-    // margin: 0;
     border: 0;
     color: c.$gold;
   }
@@ -52,14 +49,14 @@
       c.$black-fade-top,
       c.$black-fade-bottom
     );
-    margin: 1em auto;
-    top: 5em;
-    position: sticky;
-
+    margin: 0 auto;
+    top: 6rem;
+    right: 3.5rem;
+    position: absolute;
     padding: 1.5em;
     width: 200px;
     text-align: center;
-    z-index: 5;
+    // z-index: 0;
     ul {
       list-style: none;
       padding-left: 0;
@@ -70,20 +67,26 @@
     }
   }
 
-  .grid-parent {
-    width: 100vw;
+  .project-wrap {
+    width: 90%;
     display: block;
     margin: 0 auto;
     text-align: center;
     div {
+      margin: 5% auto;
       padding: 3% 0%;
       margin-bottom: 2%;
+      width: 66%;
+      img {
+        width: 66%;
+      }
     }
   }
   .contact-wrap {
     width: 90%;
   }
   .input-wrap {
+    margin: 0 auto;
     border-bottom: 2px solid c.$gold;
     padding: 1rem;
     width: 80%;

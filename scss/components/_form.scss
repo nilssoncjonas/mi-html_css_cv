@@ -1,6 +1,7 @@
 @use "../base/color" as c;
 @use "../base/mixin" as *;
 
+// Denna scss styr kontaktdelen på sidan, alla formulär
 .contact {
   margin: 5rem auto;
   width: 100%;
@@ -59,6 +60,6 @@ textarea {
     transition: all 0.3s ease 0s;
   }
   &:not(:hover) {
-    transition: all 0-3s ease 0s;
+    transition: all 0.3s ease 0s;
   }
 }

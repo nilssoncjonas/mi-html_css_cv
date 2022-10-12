@@ -1,0 +1,52 @@
+@use "../base/color" as c;
+
+// Denna scss styr projektdelen på sidan
+.project {
+  width: 100%;
+  // margin: 0 auto;
+  margin: 5rem auto 10rem auto;
+  border-bottom: 2px solid c.$gold;
+}
+.project-wrap {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  // padding: 2%;
+  text-align: center;
+  justify-items: center;
+  align-items: center;
+  margin: 0 auto 3rem auto;
+
+  div {
+    margin: 5%;
+    font-weight: 700;
+    font-size: 1em;
+    color: c.$gold;
+    border-radius: 25px;
+    
+    
+  }
+  img {
+    background-color: c.$black-bg-body;
+    width: 100%;
+    padding: 2rem;
+    border-inline-start: 1px solid;
+    border-block-start: 1px solid;
+    border-image-source: radial-gradient(circle at top left, c.$gold, transparent);
+    border-image-slice: 1;
+    border-radius: 25px;
+
+    &:hover {
+      scale: 1.25;
+      transition: all 0.3s ease 0s ;
+      background-color: transparent;
+    }
+    &:not(:hover) {
+      transition: all 0.3s ease 0s ;
+      
+    }
+  }
+}
+

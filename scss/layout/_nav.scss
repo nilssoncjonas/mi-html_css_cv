@@ -1,4 +1,6 @@
 @use "../base/color" as c;
+
+// Denna scss styr navbaren
 .nav-sticky {
   position: sticky;
   top: 0px;
@@ -17,13 +19,14 @@ nav {
   border-radius: 0px 0px 25px 25px;
 }
 .nav-list {
+  
   width: 100%;
   list-style: none;
   display: flex;
   justify-content: space-around;
   padding-left: 0px;
   margin: 10px 0px;
-  z-index: 5;
+  z-index: 2;
   a {
     font-size: 1rem;
     font-weight: 500;

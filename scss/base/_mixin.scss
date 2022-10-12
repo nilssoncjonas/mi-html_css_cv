@@ -1,18 +1,18 @@
 @use "color" as c;
+
+// Denna scss har de färdiga modulerna
 @mixin border-gold-shadow {
 
   border: 1px solid c.$gold;
   border-radius: 25px;
   box-shadow: 0px 0px 5px 5px rgba(18, 18, 18, 0.75);
-  -webkit-box-shadow: 0px 0px 5px 5px rgba(18, 18, 18, 0.75);
-  -moz-box-shadow: 0px 0px 5px 5px rgba(18, 18, 18, 0.75);
+
 }
 @mixin border-grey-shadow {
   border: 1px solid c.$black-light;
   border-radius: 25px;
   box-shadow: 0px 0px 5px 5px rgba(18, 18, 18, 0.75);
-  -webkit-box-shadow: 0px 0px 5px 5px rgba(18, 18, 18, 0.75);
-  -moz-box-shadow: 0px 0px 5px 5px rgba(18, 18, 18, 0.75);
+
 }
 
 @mixin button {

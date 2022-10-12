@@ -1,6 +1,7 @@
 @use "../base/color" as c;
 @use "../base/mixin" as *;
 
+// Denna scss styr sidoinformationen
 .name {
   margin: 0px;
   color: c.$gold;
@@ -12,10 +13,10 @@
   position: sticky;
   // left: 2em;
   // top: 3vw;
-  margin: 3em 0em 0em 2em;
+  margin: 3rem 0rem 0rem 2rem;
   
   width: 300px;
-  height: max-content;
+  height: 100%;
   // background-color: c.$black-bg-dark;
   background-image: linear-gradient(
     180deg,

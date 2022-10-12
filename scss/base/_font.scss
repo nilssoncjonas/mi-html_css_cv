@@ -6,19 +6,32 @@
 // font-family: 'Comforter Brush', cursive;
 // font-family: 'Montserrat', sans-serif;
 
+// Denna scss importerar fontfamilies och styr bootstrapikonerna
+
 .bi-download {
   padding-right: 15px;
 }
-.bi-linkedin, .bi-github, .bi-geo-alt, .bi-envelope  {
+.bi-linkedin, 
+.bi-github, 
+.bi-geo-alt, 
+.bi-envelope  {
   display: block;
-  font-size: 1.9em;
-  padding-bottom: 10px;
+  font-size: 2rem;
+  padding-bottom: 1rem;
 
 }
-
-.bi-filetype-html, .bi-filetype-js, .bi-building, .bi-terminal, .bi-people {
+.bi-filetype-html, 
+.bi-filetype-js, 
+.bi-building, 
+.bi-terminal, 
+.bi-people {
   color: c.$gold;
-  padding: 10px;
-  font-size: 2.5em;
+  padding: 1rem;
+  font-size: 3rem;
   
+}
+.bi-info-square,
+.bi-list,
+.bi-x-lg {
+  font-size: 2rem;
 }

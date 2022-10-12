@@ -1,0 +1,22 @@
+Project Root
+
+index.html
+style.scss
+css/
+	├── style.css
+img/
+scss/
+	├── base/
+		├── _color.scss
+		├── _main.scss
+		├── _font.scss
+		├── _heading.scss
+		├── _mixin.scss
+	├── components/
+		├── _form.scss
+		├── _grid.scss
+	├── layout/
+		├── _aside.scss
+		├── _nav.scss
+	├── responsive/
+		├── _mobile.scss
