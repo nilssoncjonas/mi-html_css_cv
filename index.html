@@ -27,7 +27,7 @@
     <div class="main-wrap" id="home">
       <aside class="left-side-menu info">
         <div class="pic-bg">
-          <img src="img/profile-pic-200w.webp" class="profile-pic" alt="Profile Pictrue" srcset="/img/profile-pic-200w.webp 200w, img/profile-pic-500w.webp 500w">
+          <img src="img/profile-pic-200w.webp" class="profile-pic" alt="Profile Pictrue" srcset="/img/profile-pic-200w.webp 200w, img/profile-pic-500w.webp 500w" sizes="(max-width: 500px) 200px, 500px">
         </div>
         <h1 class="name">Jonas Nilsson</h1>
         <h2 class="title">Front End Developer</h2>
@@ -79,7 +79,7 @@
             <div class="mobile-nav" id="mobile-nav">
               <ul class="mobile-nav-list">
                 <li>
-                  <button onclick="myFunction()"class="right-side-menu-toggle mobile-only">
+                  <button onclick="myFunction()" class="right-side-menu-toggle mobile-only">
                     <span><i class="bi bi-x-lg"></i></span>
                   </button>
                 </li>
@@ -189,10 +189,9 @@
           <h3 id="project" class="project-heading">Mina Projekt</h3>
           <div class="project-wrap">
             <div>
-              <a href="https://nilssoncjonas.github.io/mi-Barbershop/" target="_blank"><img src="/img/barbershop-assignment-600w.webp" alt="Barbershop, Första inlämningsuppgiften på HTML & CSS kursen."/></a>
+              <a href="https://nilssoncjonas.github.io/mi-Barbershop/" target="_blank"><img src="/img/barbershop-assignment-600w.webp" alt="Barbershop, Första inlämningsuppgiften på HTML & CSS kursen."></a>
                 <p>
                   HTML & CSS Kursens första inlämningsuppgift.
-
                 </p>
             </div>
             <div>
@@ -203,11 +202,12 @@
             </div>            
             <div>
               <a href="https://nilssoncjonas.github.io/Frontend-Mentor_Product-preview-card/" target="_blank"><img src="/img/desktop-product-card.webp" alt="Skrivbordsvy av Produkt Kort från Front End Mentor.."></a>
-              <p>
-                Projekt från Front End Mentor.
-              </p>
+                <p>
+                  Projekt från Front End Mentor.
+                </p>
             </div>
-          </section>
+          </div>
+        </section>
           <!-- Kontaktdelen börjar här -->
         <section class="contact">
           <h3 id="contact" class="contact-heading">Kontakta Mig</h3>
@@ -227,7 +227,7 @@
               </span>
               <span class="input-wrap">
                 <label for="text"></label>
-                <textarea name="text" id="text" cols="40" rows="10" placeholder="Meddelande:">                  
+                <textarea name="text" id="text" cols="30" rows="10" placeholder="Meddelande:">                  
                 </textarea>
               </span>
               <button type="submit" class="send-button">Skicka</button>
