@@ -5,8 +5,8 @@
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
-  background-color: #121212;
-  color: #D6D6D6;
+  background-color: #FEFEFA;
+  color: #423f3f;
   font-family: "Montserrat", sans-serif;
   line-height: 1.5;
 }
@@ -30,13 +30,13 @@ main {
   border-radius: 25px;
   box-shadow: 0px 0px 5px 5px rgba(18, 18, 18, 0.75);
   margin: 3em 2em;
-  background-color: #1E1E1F;
+  background-color: #e4e4e6;
 }
 
 .about {
   margin: 5rem auto 10rem auto;
   width: 100%;
-  border-bottom: 2px solid #AD7F51;
+  border-bottom: 2px solid #2b89d6;
 }
 
 .about-div {
@@ -46,7 +46,7 @@ main {
 }
 
 .about-edu {
-  background-color: #1E1E1F;
+  background-color: #e4e4e6;
   display: flex;
   flex-flow: wrap;
   padding: 2%;
@@ -55,7 +55,7 @@ main {
   padding: 0 0.5rem;
 }
 .about-edu div {
-  border: 1px solid #AD7F51;
+  border: 1px solid #2b89d6;
   border-radius: 25px;
   box-shadow: 0px 0px 5px 5px rgba(18, 18, 18, 0.75);
   width: 300px;
@@ -75,11 +75,11 @@ footer {
   justify-content: space-around;
   margin: 4rem auto;
   width: 50%;
-  color: #AD7F51;
+  color: #2b89d6;
 }
 
 .footer-info {
-  color: #AD7F51;
+  color: #2b89d6;
   width: 100%;
   text-align: center;
 }
@@ -102,7 +102,7 @@ footer {
 .bi-building,
 .bi-terminal,
 .bi-people {
-  color: #AD7F51;
+  color: #2b89d6;
   padding: 1rem;
   font-size: 3rem;
 }
@@ -115,7 +115,7 @@ footer {
 
 .name {
   margin: 0px;
-  color: #AD7F51;
+  color: #2b89d6;
   font-family: "Comforter Brush", cursive;
   font-size: 3.5rem;
 }
@@ -132,7 +132,7 @@ footer {
 
 .name {
   margin: 0px;
-  color: #AD7F51;
+  color: #2b89d6;
   font-family: "Comforter Brush", cursive;
   font-size: 3.5em;
 }
@@ -146,22 +146,22 @@ footer {
   margin: 3rem 0rem 0rem 2rem;
   width: 300px;
   height: 100%;
-  background-image: linear-gradient(180deg, #383838, #252525);
+  background-image: linear-gradient(180deg, #F5F5F5, #dedfe2);
   text-align: center;
 }
 
 .pic-bg {
-  border: 1px solid #AD7F51;
+  border: 1px solid #2b89d6;
   border-radius: 25px;
   box-shadow: 0px 0px 5px 5px rgba(18, 18, 18, 0.75);
   width: auto;
   height: auto;
   margin: 10%;
-  background-image: linear-gradient(135deg, #383838, #252525);
+  background-image: linear-gradient(135deg, #F5F5F5, #dedfe2);
 }
 
 .profile-pic {
-  border: 1px solid #383838;
+  border: 1px solid #F5F5F5;
   border-radius: 25px;
   margin: 15px;
   width: 80%;
@@ -169,15 +169,15 @@ footer {
 
 .title {
   font-size: 1.2em;
-  color: #AD7F51;
-  border-top: 1px solid #AD7F51;
-  border-bottom: 1px solid #AD7F51;
+  color: #2b89d6;
+  border-top: 1px solid #2b89d6;
+  border-bottom: 1px solid #2b89d6;
   padding: 5px 0px;
-  background-image: linear-gradient(135deg, #383838, #252525);
+  background-image: linear-gradient(135deg, #F5F5F5, #dedfe2);
 }
 
 a {
-  color: #AD7F51;
+  color: #2b89d6;
   text-decoration: none;
   letter-spacing: 2px;
 }
@@ -191,17 +191,17 @@ a {
 }
 
 .download {
-  background-image: linear-gradient(135deg, #caa67f, #AD7F51);
+  background-image: linear-gradient(135deg, #3ea0c7, #2b89d6);
   padding: 10px 20px;
   border-radius: 25px;
   font-weight: 500;
-  color: #303338;
+  color: #d8dfe7;
   text-decoration: none;
 }
 .download:hover {
-  background-image: linear-gradient(135deg, #383838, #252525);
-  color: #AD7F51;
-  border: 1px solid #AD7F51;
+  background-image: linear-gradient(135deg, #F5F5F5, #dedfe2);
+  color: #2b89d6;
+  border: 1px solid #2b89d6;
   transition: all 0.3s ease 0s;
 }
 .download:not(:hover) {
@@ -223,8 +223,8 @@ nav {
   margin: 0 auto;
   display: flex;
   justify-content: center;
-  background-image: linear-gradient(180deg, #383838, #252525);
-  border-bottom: 1px solid #AD7F51;
+  background-image: linear-gradient(180deg, #F5F5F5, #dedfe2);
+  border-bottom: 1px solid #2b89d6;
   border-radius: 0px 0px 25px 25px;
 }
 
@@ -243,14 +243,14 @@ nav {
   text-transform: uppercase;
   letter-spacing: 3px;
   text-decoration: none;
-  color: #AD7F51;
+  color: #2b89d6;
   border: 1px solid transparent;
   padding: 0.25rem 0.75rem;
   border-radius: 10px;
 }
 .nav-list a:hover {
-  background-color: #1E1E1F;
-  border: 1px solid #AD7F51;
+  background-color: #e4e4e6;
+  border: 1px solid #2b89d6;
   transition: all 0.3s ease 0s;
 }
 .nav-list a:not(:hover) {
@@ -260,7 +260,7 @@ nav {
 .project {
   width: 100%;
   margin: 5rem auto 10rem auto;
-  border-bottom: 2px solid #AD7F51;
+  border-bottom: 2px solid #2b89d6;
 }
 
 .project-wrap {
@@ -277,18 +277,18 @@ nav {
   margin: 5%;
   font-weight: 700;
   font-size: 1em;
-  color: #AD7F51;
+  color: #2b89d6;
   border-radius: 25px;
 }
 .project-wrap img {
-  background-color: #121212;
+  background-color: #FEFEFA;
   width: 100%;
   padding: 2rem;
   -webkit-border-start: 1px solid;
           border-inline-start: 1px solid;
   -webkit-border-before: 1px solid;
           border-block-start: 1px solid;
-  border-image-source: radial-gradient(circle at top left, #AD7F51, transparent);
+  border-image-source: radial-gradient(circle at top left, #2b89d6, transparent);
   border-image-slice: 1;
   border-radius: 25px;
 }
@@ -315,7 +315,7 @@ nav {
 }
 
 .input-wrap {
-  border-bottom: 2px solid #AD7F51;
+  border-bottom: 2px solid #2b89d6;
   padding: 1rem;
   width: 90%;
 }
@@ -325,7 +325,7 @@ textarea {
   background-color: transparent;
   font-family: "Montserrat", sans-serif;
   font-size: 1.5rem;
-  color: #AD7F51;
+  color: #2b89d6;
   outline: none;
   border-style: none;
   margin: 3rem 1rem 0rem 1rem;
@@ -336,16 +336,16 @@ textarea {
 }
 
 .send-button {
-  background-color: #AD7F51;
+  background-color: #2b89d6;
   font-family: "Montserrat", sans-serif;
   font-size: 1.25rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 2px;
-  color: #303338;
+  color: #d8dfe7;
   outline: none;
   border-style: none;
-  border: 2px solid #AD7F51;
+  border: 2px solid #2b89d6;
   border-radius: 25px;
   margin: 5rem;
   padding: 1rem;
@@ -353,8 +353,8 @@ textarea {
   cursor: pointer;
 }
 .send-button:hover {
-  background-color: #121212;
-  color: #AD7F51;
+  background-color: #FEFEFA;
+  color: #2b89d6;
   transition: all 0.3s ease 0s;
 }
 .send-button:not(:hover) {
@@ -384,7 +384,7 @@ textarea {
   .left-side-menu-toggle {
     background: transparent;
     border: 0;
-    color: #AD7F51;
+    color: #2b89d6;
   }
   .info-open .info {
     display: block;
@@ -394,13 +394,13 @@ textarea {
   .right-side-menu-toggle {
     background: transparent;
     border: 0px;
-    color: #AD7F51;
+    color: #2b89d6;
   }
   .mobile-nav {
-    border: 1px solid #AD7F51;
+    border: 1px solid #2b89d6;
     border-radius: 25px;
     box-shadow: 0px 0px 5px 5px rgba(18, 18, 18, 0.75);
-    background-image: linear-gradient(180deg, #383838, #252525);
+    background-image: linear-gradient(180deg, #F5F5F5, #dedfe2);
     margin: 0 auto;
     top: 6rem;
     right: 3.5rem;
@@ -437,7 +437,7 @@ textarea {
   }
   .input-wrap {
     margin: 0 auto;
-    border-bottom: 2px solid #AD7F51;
+    border-bottom: 2px solid #2b89d6;
     padding: 1rem;
     width: 80%;
     display: flex;
