@@ -1,11 +1,11 @@
 Project Root
 
 index.html
-style.scss
+
 css/
 	├── style.css
-img/
 scss/
+	├──style.scss
 	├── base/
 		├── _color.scss
 		├── _main.scss

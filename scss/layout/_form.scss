@@ -11,31 +11,34 @@
 .contact-wrap {
   margin: 0 auto;
   width: 50%;
-  padding-left: 2rem;
+  padding: 2rem;
   text-align: center;
 }
 
 .input-wrap {
+  display: block;
   border-bottom: 2px solid c.$gold;
-  padding: 1rem;
-  width: 90%;
+  margin: 2rem auto;
+  width: 80%;
+  height: auto;
 }
 
 input,
 textarea {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
   background-color: transparent;
   font-size: 1.5rem;
   color: c.$gold;
   outline: none;
   border-style: none;
-  margin: 3rem 1rem 0 1rem;
-  padding: 1rem 1rem 0 1rem;
-  border-radius: 5px;
+  padding-top: 1rem;
   resize: none;
   width: 70%;
 }
 
 .send-button {
+  font-family: 'Montserrat', sans-serif;
   background-color: c.$gold;
   font-size: 1.25rem;
   font-weight: 700;
@@ -48,7 +51,6 @@ textarea {
   border-radius: 25px;
   margin: 5rem;
   padding: 1rem;
-
   width: 50%;
   cursor: pointer;
 
