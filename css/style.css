@@ -380,6 +380,7 @@ textarea {
   }
   .left-side-menu {
     display: none;
+    height: auto;
   }
   .left-side-menu-toggle {
     background: transparent;
