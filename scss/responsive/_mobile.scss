@@ -4,7 +4,7 @@
 // Denna scss styr media query för mobilvy
 @media screen and (max-width: 1024px) {
   .mobile-only {
-    display: inline !important;
+    display: inline ;
   }
 
   .desktop-only {
@@ -19,12 +19,12 @@
   }
   main {
     width: 100%;
-    margin: 0 !important;
+    margin: 0 ;
   }
 
   .left-side-menu {
     display: none;
-    height: auto;
+    height: max-content;
   }
   .left-side-menu-toggle {
     background: transparent;

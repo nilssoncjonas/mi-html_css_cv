@@ -1,5 +1,5 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
-@import url("https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Krona+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500&display=swap");
 :root {
   padding: 0px;
@@ -319,7 +319,6 @@ nav {
 input,
 textarea {
   background-color: transparent;
-  font-family: "Montserrat", sans-serif;
   font-size: 1.5rem;
   color: #AD7F51;
   outline: none;
@@ -333,7 +332,6 @@ textarea {
 
 .send-button {
   background-color: #AD7F51;
-  font-family: "Montserrat", sans-serif;
   font-size: 1.25rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -359,7 +357,7 @@ textarea {
 
 @media screen and (max-width: 1024px) {
   .mobile-only {
-    display: inline !important;
+    display: inline;
   }
   .desktop-only {
     display: none;
@@ -372,11 +370,13 @@ textarea {
   }
   main {
     width: 100%;
-    margin: 0 !important;
+    margin: 0;
   }
   .left-side-menu {
     display: none;
-    height: auto;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
   }
   .left-side-menu-toggle {
     background: transparent;
