@@ -25,7 +25,7 @@
     <div class="main-wrap" id="home">
       <aside class="left-side-menu info">
         <div class="pic-bg">
-          <img src="img/profile-pic-200w.webp" class="profile-pic" alt="Profile Picture" srcset="/img/profile-pic-200w.webp 200w, img/profile-pic-500w.webp 500w" sizes="(max-width: 500px) 200px, 500px">
+          <img src="img/profile-pic-200w.webp" class="profile-pic" alt="Profile Picture" srcset="/img/profile-pic-200w.webp 200w, img/profile-pic-500w.webp 500w" sizes="(max-width: 800px) 200px, 500px">
         </div>
         <h1 class="name">Jonas Nilsson</h1>
         <h2 class="title">Front End Developer</h2>
@@ -187,19 +187,22 @@
           <h3 id="project" class="project-heading">Mina Projekt</h3>
           <div class="project-wrap">
             <div>
-              <a href="https://nilssoncjonas.github.io/mi-Barbershop/" target="_blank"><img src="/img/barbershop-assignment-600w.webp" alt="Barbershop, Första inlämningsuppgiften på HTML & CSS kursen."></a>
+              <a href="https://nilssoncjonas.github.io/mi-Barbershop/" target="_blank"><img src="/img/barbershop-assignment-600w.webp" alt="Barbershop, Första inlämningsuppgiften på HTML & CSS kursen." 
+                srcset="img/barbershop-assignment-200w.webp 200w, img/barbershop-assignment-600w.webp 600w" sizes="(max-width: 1024px) 200px, 600px"></a>
                 <p>
                   HTML & CSS Kursens första inlämningsuppgift.
                 </p>
             </div>
             <div>
-              <a href="https://nilssoncjonas.github.io/Frontend-Mentor_Product-preview-card/" target="_blank"><img src="/img/desktop-product-card.webp" alt="Skrivbordsvy av Produkt Kort från Front End Mentor.."></a>
+              <a href="https://nilssoncjonas.github.io/Frontend-Mentor_Product-preview-card/" target="_blank"><img src="/img/desktop-product-card-600w.webp" alt="Skrivbordsvy av Produkt Kort från Front End Mentor.." 
+                srcset="img/desktop-product-card-200w.webp 200w, img/desktop-product-card-600w.webp 600w" sizes="(max-width: 1024px) 200px, 600px"></a>
                 <p>
                   Projekt från Front End Mentor.
                 </p>
             </div>
             <div>
-              <img src="/img/jn-cv-portfolio-600w.webp" alt="Denna CV/Portfolio sida.">
+              <img src="/img/jn-cv-portfolio-600w.webp" alt="Denna CV/Portfolio sida." 
+              srcset="img/jn-cv-portfolio-200w.webp 200w, img/jn-cv-portfolio-600w.webp 600w" sizes="(max-width: 1024px) 200px, 600px">
                 <p>
                   Denna CV/Portfolio-sida.
                 </p>
@@ -246,6 +249,9 @@
       l_navToggle.addEventListener("click", () => {
         document.body.classList.toggle("info-open");
       });
+
+
+
       function myFunction() {
         var x = document.getElementById("mobile-nav");
         if (x.style.display === "none") {
@@ -254,6 +260,7 @@
           x.style.display = "none";
         }
       }
+
     </script>
   </body>
 </html>

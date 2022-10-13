@@ -1,8 +1,5 @@
 @use "mixin" as *;
-@use  "color" as c;
-
-
-
+@use "color" as c;
 
 :root {
   padding: 0px;
@@ -12,11 +9,11 @@
   color: c.$white;
   font-family: "Montserrat", sans-serif;
   line-height: 1.5;
+  scroll-behavior: smooth;
 }
 
-
-
-.mobile-only, .mobile-nav {
+.mobile-only,
+.mobile-nav {
   display: none;
 }
 .nav-sticky {
@@ -24,7 +21,8 @@
 }
 .main-wrap {
   display: flex;
-justify-content: center}
+  justify-content: center;
+}
 main {
   @include border-grey-shadow;
   margin: 3em 2em;
@@ -50,8 +48,8 @@ main {
   padding: 2%;
   p {
     padding: 0 0.5rem;
-    }
-  
+  }
+
   div {
     @include border-gold-shadow;
     width: 300px;
@@ -70,11 +68,10 @@ footer {
   justify-content: space-around;
   margin: 4rem auto;
   width: 50%;
-  color: c.$gold
+  color: c.$gold;
 }
 .footer-info {
   color: c.$gold;
   width: 100%;
   text-align: center;
-
 }

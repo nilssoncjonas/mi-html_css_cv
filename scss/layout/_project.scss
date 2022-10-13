@@ -30,13 +30,12 @@ div {
     border-image-slice: 1;
     line-height:0; 
     &:hover {
-      transition: scale 0.3s ease 0s;
-      scale: (1.2);
+      transform: scale(1.1) rotate(2deg);      
       background-color: transparent;
+      transition: all 0.3s ease 0s;
     }
     &:not(:hover) {
-      transition: scale 0.3s ease 0s ;
-      
+      transition: all 0.3s ease 0s;      
     }    
   }
 }

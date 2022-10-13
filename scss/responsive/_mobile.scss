@@ -26,6 +26,8 @@
     display: none;
     height: max-content;
   }
+
+
   .left-side-menu-toggle {
     background: transparent;
     border: 0;
@@ -36,13 +38,13 @@
     position: absolute;
     inset: 3rem 0.5rem;
   }
-
+  
   .right-side-menu-toggle {
     background: transparent;
     border: 0px;
     color: c.$gold;
   }
-
+  
   .mobile-nav {
     @include border-gold-shadow;
     background-image: linear-gradient(
@@ -68,6 +70,7 @@
     }
   }
 
+  
   .project-wrap {
     width: 90%;
     display: block;
