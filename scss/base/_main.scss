@@ -37,25 +37,29 @@ main {
 
 .about-div {
   margin: 2% auto;
-  max-width: 85%;
+  max-width: 80%;
   padding: 1%;
 }
 
 .about-edu {
+  margin: 2% auto;
   background-color: c.$black-bg-dark;
   display: flex;
+  width: 90%;
   flex-flow: wrap;
+  flex-direction: row;
   padding: 2%;
   p {
     padding: 0 0.5rem;
   }
-
+  
   div {
     @include border-gold-shadow;
-    // width: 300px;
     margin: 2%;
     padding: 1%;
     flex-grow: 2;
+    flex: 2;
+    min-width: 300px;
   }
 }
 footer {

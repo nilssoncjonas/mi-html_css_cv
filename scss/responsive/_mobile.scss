@@ -37,8 +37,7 @@
   }
   .info-open .info {
     display: block;
- 
-position: absolute;
+    position: absolute;
     inset: 2rem 0.5rem;
   }
   
@@ -52,10 +51,10 @@ position: absolute;
 
   }
   .bi-info-square,
-.bi-list,
-.bi-x-lg {
+  .bi-list,
+  .bi-x-lg {
   font-size: 1.5rem;
-}
+  }
 
   .mobile-nav {
     @include border-gold-shadow;
