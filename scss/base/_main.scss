@@ -52,7 +52,7 @@ main {
 
   div {
     @include border-gold-shadow;
-    width: 300px;
+    // width: 300px;
     margin: 2%;
     padding: 1%;
     flex-grow: 2;
